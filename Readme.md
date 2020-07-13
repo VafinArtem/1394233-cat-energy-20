@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Артем Вафин](https://up.htmlacademy.ru/adaptive/20/user/1394233).
-* Наставник: `Неизвестно`.
+* Наставник: [Арсений Березин] (https://up.htmlacademy.ru/adaptive/20/user/263537).
 
 ---
 
