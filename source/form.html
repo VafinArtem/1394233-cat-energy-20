@@ -29,7 +29,47 @@
   <main class="page-main">
     <section class="program-select">
       <h2 class="title program-select__title">Подбор программы</h2>
-      <p class="program-select_text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+      <p class="program-select__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+      <form action="https://echo.htmlacademy.ru" method="GET" class="program-select__form form">
+        <fieldset class="form__block">
+          <legend class="visually-hidden">О коте</legend>
+          <label class="form__name">
+            ИМЯ:*
+            <input type="text" class="form__text" placeholder="барсик" required>
+          </label>
+          <label class="form__name">
+            Вес (кг):*
+            <input type="text" class="form__text" placeholder="7" required>
+          </label>
+          <label class="form__name">
+            Возраст (лет):
+            <input type="text" class="form__text" placeholder="7">
+          </label>
+        </fieldset>
+        <fieldset class="form__block">
+          <legend class="visually-hidden">Выбор программы</legend>
+          <ul class="form__list">
+            <li class="form__item">
+              <label class="form__name">
+                <input class="form__radio" type="radio" name="slim">
+                Похудение
+              </label>
+            </li>
+            <li class="form__item">
+              <label class="form__name">
+                <input class="form__radio" type="radio" name="weight">
+                Набор массы
+              </label>
+            </li>
+            <li class="form__item">
+              <label class="form__name">
+                <input class="form__radio" type="radio" name="advice">
+                Не знаю (Нужен ваш совет)
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+      </form>
     </section>
   </main>
 
