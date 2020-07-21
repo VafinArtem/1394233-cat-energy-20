@@ -1,0 +1,17 @@
+.properties__wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 140px;
+}
+.properties__description {
+  margin: 0;
+}
+
+.properties__item,
+.properties__description {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: #444444;
+}
