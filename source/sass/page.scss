@@ -1,0 +1,19 @@
+.page {
+  height: 100%;
+}
+
+.page,
+.page::before,
+.page::after {
+  box-sizing: border-box;
+}
+
+.page__body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  color: var(--basic-black);
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+}
