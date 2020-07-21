@@ -1,12 +1,4 @@
 @import "fonts.scss";
-@import "page.scss";
-@import "page-header.scss";
-@import "main-nav.scss";
-@import "logo.scss";
-@import "page-main.scss";
-@import "promo.scss";
-
-
 
 .container {
   width: 320px;
@@ -26,6 +18,7 @@
 }
 
 .title {
+  margin: 0;
   font-size: 36px;
   line-height: 40px;
   font-style: normal;
@@ -44,3 +37,13 @@
   text-transform: uppercase;
   color: #ffffff;
 }
+
+@import "page.scss";
+@import "page-header.scss";
+@import "main-nav.scss";
+@import "logo.scss";
+@import "page-main.scss";
+@import "promo.scss";
+@import "programms.scss";
+
+
