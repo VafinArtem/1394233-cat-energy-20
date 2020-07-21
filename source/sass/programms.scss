@@ -31,6 +31,7 @@
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
+
   &::after {
     position: absolute;
     content: "";
@@ -44,6 +45,7 @@
   }
 
   &--slim {
+
     &::before {
       position: absolute;
       content: "";
@@ -58,6 +60,7 @@
     }
   }
   &--weight {
+
     &::before {
       position: absolute;
       content: "";
@@ -91,6 +94,7 @@
   font-size: 16px;
   line-height: 16px;
   color: $basic-black;
+
   &::after {
     position: absolute;
     left: 100%;
