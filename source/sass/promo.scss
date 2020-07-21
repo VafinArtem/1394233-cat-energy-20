@@ -1,0 +1,28 @@
+.promo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 480px;
+  background-image: url(../img/index-background-mobile@1x.jpg);
+  background-repeat: no-repeat;
+  padding-top: 27px;
+}
+
+.promo__title {
+  color: $basic-white;
+  text-align: center;
+}
+
+.promo__description {
+  margin: 0;
+  font-size: 14px;
+  line-height: 14px;
+  color: $basic-white;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.promo__button {
+  text-decoration: none;
+}

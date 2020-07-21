@@ -1,1 +1,55 @@
-// Начните писать стили здесь
+@import "fonts.scss";
+@import "variables.scss";
+
+.container {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0)
+}
+
+.title {
+  margin: 0;
+  font-size: 36px;
+  line-height: 40px;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $basic-green;
+  width: 280px;
+  height: 40px;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $basic-white;
+}
+
+@import "page.scss";
+@import "page-header.scss";
+@import "main-nav.scss";
+@import "logo.scss";
+@import "page-main.scss";
+@import "promo.scss";
+@import "programms.scss";
+@import "works.scss";
+@import "catalog.scss";
+@import "pagination.scss";
+@import "properties.scss";
+@import "page-footer.scss";
+@import "social.scss";
+@import "copyright.scss";
