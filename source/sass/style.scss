@@ -1,4 +1,10 @@
+@import "fonts.scss";
 @import "page.scss";
+@import "page-header.scss";
+@import "main-nav.scss";
+@import "logo.scss";
+
+
 
 .container {
   width: 320px;
@@ -6,3 +12,13 @@
   padding: 0 20px;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0)
+}
