@@ -20,7 +20,7 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
-  color: #222222;
+  color: $special-darkest-grey;
 }
 
 .catalog__item {
@@ -31,9 +31,9 @@
   padding: 0 20px;
   padding-top: 19px;
   padding-bottom: 25px;
-  border-top: 1px solid #EBEBEB;
+  border-top: 1px solid $special-grey;
   &:last-child {
-    border-bottom: 1px solid #EBEBEB;
+    border-bottom: 1px solid $special-grey;
   }
 }
 

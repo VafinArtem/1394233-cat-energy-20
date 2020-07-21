@@ -10,8 +10,8 @@
 
 .properties__item,
 .properties__description {
-  font-family: "Arial", sans-serif;
+  font-family: $second-font;
   font-size: 12px;
   line-height: 16px;
-  color: #444444;
+  color: $special-dark-grey;
 }

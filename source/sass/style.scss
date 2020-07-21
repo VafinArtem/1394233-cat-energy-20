@@ -1,4 +1,5 @@
 @import "fonts.scss";
+@import "variables.scss";
 
 .container {
   width: 320px;
@@ -29,13 +30,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #68B738;
+  background-color: $basic-green;
   width: 280px;
   height: 40px;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
-  color: #ffffff;
+  color: $basic-white;
 }
 
 @import "page.scss";

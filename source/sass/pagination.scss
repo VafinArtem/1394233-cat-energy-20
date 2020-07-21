@@ -18,15 +18,15 @@
   margin: 0;
   padding-top: 8px;
   padding-bottom: 21px;
-  font-family: "Arial", sans-serif;
+  font-family: $second-font;
   font-size: 12px;
   line-height: 16px;
 }
 
 .pagination__button {
   text-decoration: none;
-  background-color: #F2F2F2;
-  color: #444444;
+  background-color: $basic-grey;
+  color: $special-dark-grey;
   &--plus {
     width: 30px;
     height: 30px;
