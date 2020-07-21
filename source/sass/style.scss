@@ -11,7 +11,7 @@
 .container {
   width: 320px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0;
 }
 
 .visually-hidden {
@@ -28,4 +28,19 @@
 .title {
   font-size: 36px;
   line-height: 40px;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #68B738;
+  width: 280px;
+  height: 40px;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #ffffff;
 }
