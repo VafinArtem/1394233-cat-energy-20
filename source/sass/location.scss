@@ -2,8 +2,11 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  background-color: $basic-white;
   padding-top: 28px;
+
+  &--index {
+    background-color: $basic-white;
+  }
 }
 
 .location__text {
