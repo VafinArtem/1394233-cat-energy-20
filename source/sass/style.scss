@@ -1,6 +1,12 @@
 @import "fonts.scss";
 @import "variables.scss";
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 .container {
   width: 320px;
   margin: 0 auto;
@@ -50,8 +56,9 @@
 @import "example.scss";
 @import "slider.scss";
 @import "catalog.scss";
-@import "pagination.scss";
 @import "properties.scss";
+@import "pagination.scss";
+@import "additional.scss";
 @import "page-footer.scss";
 @import "location.scss";
 @import "social.scss";
