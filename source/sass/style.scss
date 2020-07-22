@@ -1,6 +1,12 @@
 @import "fonts.scss";
 @import "variables.scss";
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 .container {
   width: 320px;
   margin: 0 auto;
@@ -33,6 +39,7 @@
   background-color: $basic-green;
   width: 280px;
   height: 40px;
+  border: none;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
@@ -47,9 +54,16 @@
 @import "promo.scss";
 @import "programms.scss";
 @import "works.scss";
+@import "example.scss";
+@import "slider.scss";
 @import "catalog.scss";
-@import "pagination.scss";
 @import "properties.scss";
+@import "pagination.scss";
+@import "additional.scss";
+@import "gift.scss";
+@import "program-select.scss";
+@import "form.scss";
 @import "page-footer.scss";
+@import "location.scss";
 @import "social.scss";
 @import "copyright.scss";

@@ -1,0 +1,31 @@
+.location {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 28px;
+
+  &--index {
+    background-color: $basic-white;
+  }
+}
+
+.location__text {
+  margin: 0;
+  margin-bottom: 22px;
+  margin-right: 20px;
+  width: 140px;
+  font-family: $second-font;
+  font-size: 14px;
+  line-height: 20px;
+  color: $special-dark-grey;
+
+  &--invite {
+    margin-left: 20px;
+    margin-right: 0;
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 18px;
+    color: inherit;
+    text-transform: uppercase;
+  }
+}
