@@ -6,12 +6,44 @@
   min-height: 480px;
   background-image: url(../img/index-background-mobile@1x.jpg);
   background-repeat: no-repeat;
+  background-position: top center;
   padding-top: 27px;
+
+  @media (min-width: $tablet-width) {
+    background: none;
+  }
+}
+
+.promo__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  margin-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    align-items: stretch;
+    justify-content: start;
+    padding-left: 87px;
+    margin-bottom: 49px;
+  }
 }
 
 .promo__title {
   color: $basic-white;
   text-align: center;
+  width: 249px;
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    font-size: 60px;
+    line-height: 60px;
+    color: inherit;
+    width: 414px;
+    text-align: left;
+  }
 }
 
 .promo__description {
@@ -21,8 +53,33 @@
   color: $basic-white;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 41px;
+    font-size: 20px;
+    line-height: 20px;
+    color: inherit;
+    text-align: left;
+  }
+}
+
+.promo__img {
+  @media (min-width: $tablet-width) {
+    order: 1;
+    position: relative;
+    top: -137px;
+    margin-bottom: -137px;
+  }
 }
 
 .promo__button {
   text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    order: 0;
+    z-index: 2;
+    min-width: 244px;
+    height: 54px;
+    margin-right: auto;
+  }
 }

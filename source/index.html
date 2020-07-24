@@ -14,7 +14,7 @@
       <div class="main-nav__inner">
         <a class="logo logo--header">
           <picture>
-            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" width="174" height="51.68">
             <img src="img/logo-mobile.svg" width="190" height="39" alt="Cat Energy">
           </picture>
           <!-- <img src="img/logo-mobile.svg" width="190" height="39" alt="Cat Energy" class="logo__img logo__img--mobile">
@@ -31,14 +31,22 @@
       </ul>
     </nav>
   </header>
-  <main class="page-main container">
+  <main class="page-main">
     <h1 class="visually-hidden">Кэт энерджи - прокачай своего котейку</h1>
     <section class="promo">
-      <h2 class="visually-hidden">Кэт Энерджи ПРО</h2>
-      <p class="title promo__title">Функциональное питание для котов</p>
-      <p class="promo__description">Занялся собой? Займись котом!</p>
-      <img src="img/index-can-mobile@1x.png" width="280" height="271" alt="Банка оранжевого цвета с Cat Energy Pro со вкусом курицы" class="prormo__img">
-      <a href="form.html" class="button promo__button">подобрать программу</a>
+      <div class="promo__wrapper container">
+        <h2 class="visually-hidden">Кэт Энерджи ПРО</h2>
+        <p class="title promo__title">Функциональное питание для котов</p>
+        <p class="promo__description">Занялся собой? Займись котом!</p>
+      </div>
+      <picture class="promo__img">
+        <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg">
+        <img src="img/index-can-mobile@1x.png" alt="Cat Energy">
+      </picture>
+      <!-- <img src="img/index-can-mobile@1x.png" width="280" height="271" alt="Банка оранжевого цвета с Cat Energy Pro со вкусом курицы" class="prormo__img"> -->
+      <div class="promo__wrapper promo__wrapper--btn container">
+        <a href="form.html" class="button promo__button">подобрать программу</a>
+      </div>
     </section>
     <section class="programms">
       <h2 class="visually-hidden">Наши программы</h2>

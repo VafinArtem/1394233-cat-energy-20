@@ -16,7 +16,7 @@ img {
 
   @media (min-width: $tablet-width) {
     width: 768px;
-
+    padding: 0 30px;
   }
 }
 
@@ -44,11 +44,16 @@ img {
   justify-content: center;
   align-items: center;
   background-color: $basic-green;
-  width: 280px;
-  height: 40px;
+  min-width: 280px;
+  min-height: 40px;
   border: none;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
   color: $basic-white;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 0px;
+  }
 }
