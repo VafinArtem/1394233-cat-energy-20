@@ -6,6 +6,10 @@
   margin: 0 20px;
   border-top: 1px solid $special-light-grey;
   border-bottom: 1px solid $special-light-grey;
+
+  @media (min-width: $tablet-width) {
+    border: 0;
+  }
 }
 
 .social__list {
@@ -23,15 +27,30 @@
   &--vkontakte {
     width: 23px;
     height: 16px;
+
+    @media (min-width: $tablet-width) {
+      width: 30px;
+      height: 22px;
+    }
   }
 
   &--instagramm {
     width: 16px;
     height: 16px;
+
+    @media (min-width: $tablet-width) {
+      width: 23px;
+      height: 23px;
+    }
   }
 
   &--facebook {
     width: 22px;
     height: 22px;
+
+    @media (min-width: $tablet-width) {
+      width: 28px;
+      height: 33px;
+    }
   }
 }
