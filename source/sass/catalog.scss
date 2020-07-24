@@ -27,6 +27,15 @@
     gap: 60px;
     margin-top: 83px;
   }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 245px 245px 245px 245px;
+    grid-template-rows: min-content;
+    column-gap: 80px;
+    row-gap: 60px;
+    margin-top: 83px;
+  }
 }
 
 .catalog__subtitle {
