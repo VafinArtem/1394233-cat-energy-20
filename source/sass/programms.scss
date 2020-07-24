@@ -10,6 +10,11 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .programms__item {
@@ -27,6 +32,15 @@
   @media (min-width: $tablet-width) {
     min-height: 372px;
     padding-left: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-grow: 1;
+
+    &:first-child {
+      margin-bottom: 0;
+      margin-right: 80px;
+    }
   }
 }
 
@@ -82,6 +96,10 @@
         left: 100%;
         margin-left: -205px;
       }
+
+      @media (min-width: $desktop-width) {
+        display: none;
+      }
     }
   }
   &--weight {
@@ -104,6 +122,10 @@
         top: 115px;
         left: 100%;
         margin-left: -275px;
+      }
+
+      @media (min-width: $desktop-width) {
+        display: none;
       }
     }
   }
@@ -133,6 +155,12 @@
       height: 200px;
       border-radius: 50%;
       background-color: $basic-green;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      display: none;
     }
   }
 }
