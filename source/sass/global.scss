@@ -36,6 +36,11 @@ img {
   line-height: 40px;
   font-style: normal;
   font-weight: normal;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .button {
