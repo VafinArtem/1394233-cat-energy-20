@@ -4,6 +4,11 @@
   &--header {
     width: 190px;
     height: 39px;
+
+    @media (min-width: $tablet-width) {
+      width: 174px;
+      height: 51.68px;
+    }
   }
 
   &--footer {
@@ -12,5 +17,22 @@
     margin-bottom: 32px;
     width: 128px;
     height: 24px;
+  }
+}
+
+.logo__img {
+
+  &--mobile {
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  &--tablet {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
   }
 }
