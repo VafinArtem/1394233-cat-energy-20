@@ -17,6 +17,11 @@ img {
     width: 768px;
     padding: 0 30px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 1300px;
+    padding: 0 40px;
+  }
 }
 
 .visually-hidden {
