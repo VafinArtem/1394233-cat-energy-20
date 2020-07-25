@@ -2,8 +2,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: $special-grey-adv;
   padding-top: 27px;
+  background-color: $special-grey-adv;
 }
 
 .example__wrapper {
@@ -14,8 +14,8 @@
 }
 
 .example__text {
-  margin: 0;
   width: 279px;
+  margin: 0;
   font-family: $second-font;
   font-size: 14px;
   line-height: 18px;
@@ -30,9 +30,9 @@
 }
 
 .example__list {
-  margin: 0;
   display: flex;
   justify-content: space-between;
+  margin: 0;
 }
 
 .example__inner {
@@ -40,10 +40,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 34px;
-  margin-top: 25px;
   width: 124px;
   height: 56px;
+  margin-bottom: 34px;
+  margin-top: 25px;
   border: 1px solid $special-grey-mid;
   border-radius: 3px;
 }
@@ -57,10 +57,10 @@
 .example__item {
   position: absolute;
   bottom: -15px;
-  background-color: $special-grey-adv;
   width: 87px;
   font-family: $second-font;
   font-size: 12px;
   line-height: 12px;
   text-align: center;
+  background-color: $special-grey-adv;
 }
