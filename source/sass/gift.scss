@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-grow: 1;
   width: 280px;
   height: 289px;
   margin: 0 20px;
@@ -10,6 +11,10 @@
   background-color: $basic-green;
   background-image: url(../img/gift-photo-mobile@1x.jpg);
   background-repeat: no-repeat;
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
 }
 
 .gift__text {
