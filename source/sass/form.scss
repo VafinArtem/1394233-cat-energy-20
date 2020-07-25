@@ -4,6 +4,15 @@
   justify-content: start;
 }
 
+.form__inner {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+  }
+}
+
 .form__block {
   display: flex;
   justify-content: space-between;
@@ -22,6 +31,17 @@
 
   &--comment {
     padding: 0 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+
+    &--about {
+      width: 569px;
+    }
+
+    &--programm {
+      width: 569px;
+    }
   }
 }
 
@@ -102,10 +122,44 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    &--add {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--add {
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+.form__item {
+
+  @media (min-width: $tablet-width) {
+    &--add {
+      width: 323px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--add {
+      width: auto;
+    }
+  }
 }
 
 .form__inner {
   padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
 
 .form__text {
