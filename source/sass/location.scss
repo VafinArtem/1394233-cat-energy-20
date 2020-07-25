@@ -7,6 +7,24 @@
   &--index {
     background-color: $basic-white;
   }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    padding-top: 0;
+  }
+}
+
+.location__inner {
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 95px;
+    width: 570px;
+    height: 201px;
+    background-color: $basic-white
+  }
 }
 
 .location__text {
@@ -27,5 +45,10 @@
     line-height: 18px;
     color: inherit;
     text-transform: uppercase;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    flex-grow: 1;
   }
 }

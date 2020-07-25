@@ -1,5 +1,4 @@
 .example {
-
   padding-top: 27px;
   background-color: $special-grey-adv;
 
@@ -20,6 +19,7 @@
 
 .example__wrapper {
   padding: 0 20px;
+
   @media (min-width: $tablet-width) {
     padding: 0;
     display: flex;
@@ -31,6 +31,7 @@
     width: 570px;
   }
 }
+
 .example__title {
   margin-bottom: 33px;
 }
