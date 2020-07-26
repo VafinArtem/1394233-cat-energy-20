@@ -105,19 +105,19 @@
   background-position: 50% 50%;
 
   &--nutrient {
-    background-image: url(../img/advantage-leaf@1x.png);
+    background-image: url("../img/advantage-leaf@1x.png");
   }
 
   &--cooking {
-    background-image: url(../img/advantage-powder@1x.png);
+    background-image: url("../img/advantage-powder@1x.png");
   }
 
   &--use {
-    background-image: url(../img/advantage-dining@1x.png);
+    background-image: url("../img/advantage-dining@1x.png");
   }
 
   &--changes {
-    background-image: url(../img/advantage-clock@1x.png);
+    background-image: url("../img/advantage-clock@1x.png");
   }
 
   @media (min-width: $tablet-width) {
