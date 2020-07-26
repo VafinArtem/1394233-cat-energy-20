@@ -3,7 +3,7 @@
   background-color: $special-grey-adv;
 
   @media (min-width: $tablet-width) {
-    background-color: $basic-white;
+    background: linear-gradient(to bottom, $basic-white 50%, $special-grey-adv 50%);
   }
 }
 
@@ -53,6 +53,8 @@
 
   @media (min-width: $tablet-width) {
     width: auto;
+    font-size: 16px;
+    line-height: 24px;
 
     &--cost {
       width: 174px;
@@ -94,12 +96,22 @@
   margin-top: 25px;
   border: 1px solid $special-grey-mid;
   border-radius: 3px;
+
+  @media (min-width: $tablet-width) {
+    width: 162px;
+    height: 77px;
+  }
 }
 
 .example__description {
   margin: 0;
   font-size: 24px;
   line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .example__item {
@@ -112,7 +124,15 @@
   text-align: center;
   background-color: $special-grey-adv;
 
+  &--weight {
+    width: 77px;
+  }
+
   @media (min-width: $tablet-width) {
+    bottom: -5px;
+    width: 137px;
+    font-size: 14px;
+    line-height: 14px;
     background-color: $basic-white;
   }
 }

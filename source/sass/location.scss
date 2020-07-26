@@ -18,6 +18,11 @@
   display: flex;
   justify-content: space-between;
 
+  @media (min-width: $tablet-width) {
+    justify-content: space-around;
+    width: 100%;
+  }
+
   @media (min-width: $desktop-width) {
     position: absolute;
     top: 95px;
@@ -48,7 +53,17 @@
   }
 
   @media (min-width: $tablet-width) {
-    width: auto;
-    flex-grow: 1;
+    width: 171px;
+    margin-right: 0;
+    margin-left: 0;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+
+    &--invite {
+      font-size: 20px;
+      line-height: 21px;
+      text-align: left;
+    }
   }
 }
