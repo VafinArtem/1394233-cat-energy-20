@@ -29,14 +29,15 @@
   height: 16px;
   border: none;
   background: none;
-  background-image: url(../img/icon-mobile-menu.svg);
-  background-repeat: no-repeat;;
+  background-image: url("../img/icon-mobile-menu.svg");
+  background-repeat: no-repeat;
 
   &--active {
     width: 18px;
     height: 18px;
-    background-image: url(../img/icon-close.svg);
+    background-image: url("../img/icon-close.svg");
   }
+
   @media (min-width: $tablet-width) {
     display: none;
   }

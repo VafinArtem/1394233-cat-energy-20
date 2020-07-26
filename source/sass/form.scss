@@ -39,7 +39,6 @@
   }
 
   @media (min-width: $desktop-width) {
-
     &--about {
       width: 569px;
     }
@@ -75,7 +74,7 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $special-dark-grey;
-  border: 1px solid #E7E7E7;
+  border: 1px solid #e7e7e7;
 
   &--comment {
     width: 280px;
@@ -146,7 +145,6 @@
 }
 
 .form__item {
-
   @media (min-width: $tablet-width) {
     &--add {
       width: 323px;

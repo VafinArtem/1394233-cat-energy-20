@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  width: 100%px;
+  width: 100%;
 
   &--add {
     width: 100%;
@@ -11,8 +11,8 @@
   @media (min-width: $tablet-width) {
     border-bottom: 1px solid $special-grey-mid;
   }
-
 }
+
 .properties__description {
   margin: 0;
 }
