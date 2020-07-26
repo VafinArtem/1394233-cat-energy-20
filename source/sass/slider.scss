@@ -2,6 +2,7 @@
   list-style: none;
   display: grid;
   padding: 0;
+  text-align: center;
 }
 
 .slider__item {
@@ -38,7 +39,7 @@
     position: absolute;
     display: block;
     content: "";
-    }
+  }
 
   &::before {
     width: 84px;

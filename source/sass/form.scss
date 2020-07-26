@@ -4,14 +4,28 @@
   justify-content: start;
 }
 
+.form__inner {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+  }
+}
+
 .form__block {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  border: none;
   margin: 0;
   padding: 0;
   margin-bottom: 26px;
+  border: none;
 
   &:nth-child(2) {
     padding-top: 20px;
@@ -23,48 +37,58 @@
   &--comment {
     padding: 0 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    &--about {
+      width: 569px;
+    }
+
+    &--programm {
+      width: 569px;
+    }
+  }
 }
 
 .form__name {
-  padding: 0 20px;
   display: flex;
   align-items: center;
+  padding: 0 20px;
   margin-bottom: 13px;
 }
 
 .form__description {
   display: block;
+  margin-right: 9px;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   color: $special-dark-grey;
-  margin-right: 9px;
 }
 
 .form__input {
   flex-grow: 1;
   height: 45px;
-  border: 1px solid #E7E7E7;
   padding-left: 14px;
+  font-family: inherit;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   color: $special-dark-grey;
-  font-family: inherit;
+  border: 1px solid #e7e7e7;
 
   &--comment {
-    padding-top: 13px;
     width: 280px;
     height: 150px;
+    padding-top: 13px;
   }
 }
 
 .form__title {
   position: relative;
   padding: 0 20px;
+  margin-bottom: 34px;
   font-size: 24px;
   line-height: 24px;
-  margin-bottom: 34px;
 
   &::after {
     position: absolute;
@@ -74,6 +98,7 @@
     height: 2px;
     background-color: $basic-green;
   }
+
   &--comment {
     padding: 0;
   }
@@ -99,13 +124,38 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  list-style: none;
   margin: 0;
   padding: 0;
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    &--add {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--add {
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+  }
 }
 
-.form__inner {
-  padding: 0 20px;
+.form__item {
+  @media (min-width: $tablet-width) {
+    &--add {
+      width: 323px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--add {
+      width: auto;
+    }
+  }
 }
 
 .form__text {

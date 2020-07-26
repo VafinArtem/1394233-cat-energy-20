@@ -32,7 +32,7 @@ img {
   padding: 0;
   overflow: hidden;
   border: 0;
-  clip: rect(0 0 0 0)
+  clip: rect(0 0 0 0);
 }
 
 .title {
@@ -52,14 +52,15 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: $basic-green;
   min-width: 280px;
   min-height: 40px;
-  border: none;
+  font-family: inherit;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
   color: $basic-white;
+  border: none;
+  background-color: $basic-green;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;

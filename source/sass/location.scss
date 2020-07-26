@@ -7,6 +7,30 @@
   &--index {
     background-color: $basic-white;
   }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    padding-top: 0;
+  }
+}
+
+.location__inner {
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 95px;
+    align-items: center;
+    width: 570px;
+    height: 201px;
+    background-color: $basic-white;
+  }
 }
 
 .location__text {
@@ -27,5 +51,24 @@
     line-height: 18px;
     color: inherit;
     text-transform: uppercase;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 171px;
+    margin-right: 0;
+    margin-left: 0;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+
+    &--invite {
+      font-size: 20px;
+      line-height: 21px;
+      text-align: left;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
   }
 }
