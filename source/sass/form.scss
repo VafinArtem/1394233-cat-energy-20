@@ -7,6 +7,11 @@
 .form__inner {
   display: flex;
   flex-direction: column;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
@@ -94,6 +99,7 @@
     height: 2px;
     background-color: $basic-green;
   }
+
   &--comment {
     padding: 0;
   }
@@ -151,14 +157,6 @@
     &--add {
       width: auto;
     }
-  }
-}
-
-.form__inner {
-  padding: 0 20px;
-
-  @media (min-width: $tablet-width) {
-    display: flex;
   }
 }
 
