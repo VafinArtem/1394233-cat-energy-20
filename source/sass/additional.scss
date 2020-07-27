@@ -12,6 +12,7 @@
 .additional__title {
   position: relative;
   padding: 0 20px;
+  margin-bottom: 34px;
   font-size: 24px;
   line-height: 24px;
 
@@ -22,6 +23,7 @@
     left: 100%;
     width: 53px;
     height: 2px;
+    margin-top: 3px;
     margin-left: -53px;
     background-color: $basic-green;
   }
@@ -39,7 +41,6 @@
 
 .additional__list {
   margin: 0;
-  margin-top: 35px;
   padding: 0 20px;
   list-style: none;
 
@@ -53,10 +54,7 @@
 .additional__item {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  height: 130px;
   padding-top: 13px;
-  padding-bottom: 19px;
   border-top: 1px solid $special-grey-mid;
 
   &:last-child {
@@ -65,6 +63,7 @@
 }
 
 .additional__subtitle {
+  margin-bottom: 13px;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
@@ -73,4 +72,12 @@
 
 .additional__description {
   margin: 0;
+  margin-bottom: 15px;
+}
+
+.additional__button {
+  margin-bottom: 17px;
+  font-size: 16px;
+  line-height: 0px;
+  text-decoration: none;
 }
