@@ -48,7 +48,7 @@
 .programms__title {
   position: relative;
   padding-left: 71px;
-  padding-top: 10px;
+  padding-top: 9px;
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
@@ -56,9 +56,9 @@
   &::after {
     position: absolute;
     content: "";
-    top: 4px;
+    top: 3px;
     right: 100%;
-    margin-right: -50px;
+    margin-right: -52px;
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -79,11 +79,11 @@
     &::before {
       position: absolute;
       content: "";
-      top: -3px;
+      top: 0px;
       right: 100%;
-      margin-right: -55px;
+      margin-right: -59px;
       width: 50px;
-      height: 53px;
+      height: 50px;
       background-image: url("../img/icon-cat-slim.svg");
       background-repeat: no-repeat;
       z-index: 10;
@@ -108,7 +108,7 @@
       content: "";
       right: 100%;
       top: 14px;
-      margin-right: -55px;
+      margin-right: -60px;
       width: 67px;
       height: 28px;
       background-image: url("../img/icon-cat-pro.svg");
@@ -132,6 +132,7 @@
 
 .programms__description {
   margin: 0;
+  margin-top: -12px;
   font-family: $second-font;
   font-size: 14px;
   line-height: 18px;
@@ -179,7 +180,7 @@
     position: absolute;
     left: 100%;
     top: 2px;
-    margin-left: 16px;
+    margin-left: 13px;
     content: "";
     width: 24px;
     height: 12px;
