@@ -1,0 +1,6 @@
+.page-header {
+  @media (min-width: $desktop-width) {
+    height: 696px;
+    background: url("../img/index-background-desktop@1x.jpg") center right no-repeat, linear-gradient(to right, $basic-white 50%, $special-green 50%);
+  }
+}
