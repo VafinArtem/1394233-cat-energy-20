@@ -7,7 +7,7 @@
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: top center;
-  padding-top: 27px;
+  padding-top: 25px;
 
   @media (min-width: $tablet-width) {
     background: none;
@@ -25,10 +25,12 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 29px;
+  margin-bottom: 28px;
 
   &--btn {
     order: 1;
+    margin-bottom: 0px;
+    margin-top: -2px;
   }
 
   @media (min-width: $tablet-width) {
@@ -54,6 +56,7 @@
   text-align: center;
   width: 249px;
   margin-bottom: 25px;
+  margin-top: 2px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;

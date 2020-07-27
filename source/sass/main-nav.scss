@@ -14,7 +14,7 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: 60px;
+  height: 65px;
   padding: 0 20px;
 
   @media (min-width: $tablet-width) {
@@ -27,6 +27,8 @@
   padding: 0;
   width: 24px;
   height: 16px;
+  margin-right: 3px;
+  margin-bottom: 1px;
   border: none;
   background: none;
   background-image: url("../img/icon-mobile-menu.svg");
@@ -73,6 +75,7 @@
   border-bottom: 1px solid $special-lightest-grey;
 
   &:first-child {
+    height: 67px;
     border-top: 1px solid $special-lightest-grey;
 
     @media (min-width: $tablet-width) {
