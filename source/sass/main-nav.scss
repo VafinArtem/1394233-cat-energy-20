@@ -44,10 +44,15 @@
 }
 
 .main-nav__list {
+  display: none;
   width: 100%;
   list-style: none;
   margin: 0;
   padding: 0;
+
+  &--active {
+    display: block;
+  }
 
   @media (min-width: $tablet-width) {
     width: 440px;

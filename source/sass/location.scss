@@ -9,7 +9,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    position: relative;
     padding-top: 0;
   }
 }
@@ -24,11 +23,14 @@
   }
 
   @media (min-width: $desktop-width) {
-    position: absolute;
-    top: 95px;
+    position: relative;
+    top: 350px;
+    left: -330px;
+    z-index: 100;
     align-items: center;
     width: 570px;
     height: 201px;
+    margin-top: -201px;
     background-color: $basic-white;
   }
 }
@@ -70,5 +72,18 @@
 
   @media (min-width: $desktop-width) {
     margin: 0;
+  }
+}
+
+.location__map {
+  width: 100%;
+  height: 362px;
+
+  @media (min-width: $tablet-width) {
+    height: 396px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 400px;
   }
 }
