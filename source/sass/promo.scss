@@ -10,6 +10,7 @@
   padding-top: 25px;
 
   @media (min-width: $tablet-width) {
+    padding-top: 53px;
     background: none;
   }
 
@@ -38,9 +39,10 @@
     align-items: stretch;
     justify-content: start;
     padding-left: 87px;
-    margin-bottom: 49px;
+    margin-bottom: 50px;
 
     &--btn {
+      padding-left: 81px;
       order: 0;
     }
   }
@@ -89,9 +91,11 @@
   order: 0;
 
   @media (min-width: $tablet-width) {
+    $stats-shift: -133px;
+
     position: relative;
-    top: -137px;
-    margin-bottom: -137px;
+    top: $stats-shift;
+    margin-bottom: $stats-shift;
     order: 1;
   }
 
