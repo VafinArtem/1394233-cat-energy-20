@@ -5,7 +5,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 0 30px;
-    padding-top: 27px;
+    padding-top: 46px;
   }
 }
 
@@ -20,7 +20,8 @@
     grid-template-columns: 324px 324px;
     grid-template-rows: 227px 227px;
     column-gap: 60px;
-    row-gap: 88px;
+    row-gap: 90px;
+    margin-top: 72px;
   }
 
   @media (min-width: $desktop-width) {
@@ -35,6 +36,7 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
+  margin-left: -1px;
 
   @media (min-width: $tablet-width) {
     position: relative;
@@ -43,55 +45,40 @@
     align-items: stretch;
     margin-bottom: 0;
 
+    &::after {
+      position: absolute;
+      bottom: 100%;
+      z-index: -1;
+      margin-bottom: -308px;
+      font-size: 280px;
+      color: $basic-grey;
+    }
+
     &--one {
       &::after {
-        position: absolute;
         content: "1";
-        font-size: 280px;
-        color: $basic-grey;
-        bottom: 100%;
         left: 118px;
-        margin-bottom: -310px;
-        z-index: -1;
       }
     }
 
     &--two {
       &::after {
-        position: absolute;
         content: "2";
-        font-size: 280px;
-        color: $basic-grey;
-        bottom: 100%;
-        left: 118px;
-        margin-bottom: -310px;
-        z-index: -1;
+        left: 110px;
       }
     }
 
     &--three {
       &::after {
-        position: absolute;
         content: "3";
-        font-size: 280px;
-        color: $basic-grey;
-        bottom: 100%;
-        left: 118px;
-        margin-bottom: -310px;
-        z-index: -1;
+        left: 113px;
       }
     }
 
     &--four {
       &::after {
-        position: absolute;
         content: "4";
-        font-size: 280px;
-        color: $basic-grey;
-        bottom: 100%;
-        left: 118px;
-        margin-bottom: -310px;
-        z-index: -1;
+        left: 113px;
       }
     }
   }
@@ -135,6 +122,12 @@
   color: $special-dark-grey;
   font-size: 14px;
   line-height: 18px;
+
+  @media (max-width: $mobile-width-only) {
+    br {
+      display: none;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     width: 245px;
