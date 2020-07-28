@@ -2,7 +2,7 @@
   padding-top: 27px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 65px;
+    margin-top: 32px;
   }
 }
 
@@ -38,6 +38,13 @@
 .catalog__link {
   display: block;
   height: 144px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: flex-end;
+    height: 200px;
+    margin-top: auto;
+  }
 }
 
 .catalog__subtitle {
@@ -75,9 +82,10 @@
   }
 
   @media (min-width: $tablet-width) {
-    border: none;
     flex-direction: column;
     align-items: center;
+    height: auto;
+    border: none;
   }
 }
 
@@ -89,6 +97,11 @@
   &--img {
     align-items: center;
     justify-content: center;
+
+    @media (min-width: $tablet-width) {
+      align-items: flex-end;
+      height: 200px;
+    }
   }
 
   @media (min-width: $tablet-width) {
