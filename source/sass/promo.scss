@@ -91,11 +91,11 @@
   order: 0;
 
   @media (min-width: $tablet-width) {
-    $stats-shift: -133px;
+    $promo-shift: -133px;
 
     position: relative;
-    top: $stats-shift;
-    margin-bottom: $stats-shift;
+    top: $promo-shift;
+    margin-bottom: $promo-shift;
     order: 1;
   }
 
