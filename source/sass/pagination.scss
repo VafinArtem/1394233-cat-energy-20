@@ -4,6 +4,11 @@
   align-items: center;
   padding: 0 20px;
   padding-top: 26px;
+
+  @media (min-width: $tablet-width) {
+    padding: 38px 38px;
+    padding-top: 55px;
+  }
 }
 
 .pagination__description {
@@ -12,6 +17,14 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    width: 134px;
+    margin-top: 49px;
+    font-size: 20px;
+    line-height: 22px;
+    text-align: center;
+  }
 }
 
 .pagination__text {
@@ -21,6 +34,14 @@
   font-family: $second-font;
   font-size: 12px;
   line-height: 16px;
+
+  @media (min-width: $tablet-width) {
+    width: 167px;
+    margin-top: 23px;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+  }
 }
 
 .pagination__button {
@@ -30,6 +51,11 @@
   background-color: $basic-grey;
   color: $special-dark-grey;
 
+  @media (min-width: $tablet-width) {
+    width: 248px;
+    margin-top: auto;
+  }
+
   &--plus {
     width: 30px;
     height: 30px;
@@ -37,5 +63,12 @@
     background: none;
     background-image: url("../img/icon-plus-mobile.svg");
     cursor: pointer;
+
+    @media (min-width: $tablet-width) {
+      width: 60px;
+      height: 60px;
+      margin: 0;
+      background-image: url("../img/icon-plus.svg");
+    }
   }
 }
