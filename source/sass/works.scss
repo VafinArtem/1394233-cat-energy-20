@@ -9,6 +9,12 @@
     padding-bottom: 59px;
     border-bottom: 1px solid $special-lightest-grey;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 40px;
+    padding-top: 73px;
+    border-bottom: 0;
+  }
 }
 
 .works__list {
@@ -28,7 +34,7 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 245px 245px 245px 245px;
-    grid-template-rows: 280px;
+    grid-template-rows: 227px;
     gap: 80px;
   }
 }
