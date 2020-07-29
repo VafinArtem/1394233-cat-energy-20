@@ -51,6 +51,15 @@
   background-color: $basic-grey;
   color: $special-dark-grey;
 
+  &:hover,
+  &:focus {
+    background-color: $special-grey;
+  }
+
+  &:active {
+    color: transparentize($special-dark-grey, 0.3);
+  }
+
   @media (min-width: $tablet-width) {
     width: 248px;
     margin-top: auto;
