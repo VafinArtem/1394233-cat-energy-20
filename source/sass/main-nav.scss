@@ -8,6 +8,10 @@
     flex-wrap: nowrap;
     padding-top: 19px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 51px;
+  }
 }
 
 .main-nav__inner {
