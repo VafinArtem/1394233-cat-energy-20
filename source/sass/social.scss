@@ -23,6 +23,19 @@
 .social__link {
   display: block;
 
+  &:hover,
+  &:focus {
+    path {
+      fill: $special-green;
+    }
+  }
+
+  &:active {
+    path {
+      fill: transparentize($special-green, 0.3);
+    }
+  }
+
   &--vkontakte {
     width: 23px;
     height: 16px;
