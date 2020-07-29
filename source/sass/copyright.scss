@@ -15,4 +15,23 @@
   line-height: 18px;
   color: $special-dark-grey;
   text-decoration: none;
+
+  &:active {
+    color: transparentize($special-dark-grey, 0.3);
+  }
+}
+
+.copyright__img{
+  &:hover,
+  &:focus {
+    path {
+      fill: $special-green;
+    }
+  }
+
+  &:active {
+    path {
+      fill: transparentize($special-green, 0.3);
+    }
+  }
 }
