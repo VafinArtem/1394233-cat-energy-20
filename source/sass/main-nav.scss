@@ -6,6 +6,11 @@
 
   @media (min-width: $tablet-width) {
     flex-wrap: nowrap;
+    padding-top: 19px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 51px;
   }
 }
 
@@ -14,7 +19,7 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: 60px;
+  height: 65px;
   padding: 0 20px;
 
   @media (min-width: $tablet-width) {
@@ -27,6 +32,8 @@
   padding: 0;
   width: 24px;
   height: 16px;
+  margin-right: 3px;
+  margin-bottom: 1px;
   border: none;
   background: none;
   background-image: url("../img/icon-mobile-menu.svg");
@@ -38,21 +45,38 @@
     background-image: url("../img/icon-close.svg");
   }
 
+  &--no-js {
+    display: none;
+  }
+
   @media (min-width: $tablet-width) {
     display: none;
   }
 }
 
 .main-nav__list {
-  width: 100%;
+  display: none;
+  min-width: 100%;
   list-style: none;
   margin: 0;
   padding: 0;
 
+  &--active {
+    display: block;
+  }
+
+  &--no-js {
+    display: block;
+  }
+
   @media (min-width: $tablet-width) {
-    width: 440px;
+    min-width: 440px;
     display: flex;
     justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 478px;
   }
 }
 
@@ -64,6 +88,7 @@
   border-bottom: 1px solid $special-lightest-grey;
 
   &:first-child {
+    height: 67px;
     border-top: 1px solid $special-lightest-grey;
 
     @media (min-width: $tablet-width) {
@@ -77,6 +102,7 @@
 }
 
 .main-nav__link {
+  display: block;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 500;
@@ -88,5 +114,58 @@
     font-size: 18px;
     font-weight: inherit;
     line-height: 24px;
+
+    &--index-active {
+      position: relative;
+      @media (min-width: $tablet-width) {
+        &::before {
+          position: absolute;
+          top: 100%;
+          content: "";
+          width: 100%;
+          height: 2px;
+          margin-top: 5px;
+          background-color: $basic-black;
+
+          @media (min-width: $desktop-width) {
+            background-color: $basic-white;
+          }
+        }
+      }
+    }
+
+    &--active {
+      position: relative;
+      @media (min-width: $tablet-width) {
+        &::before {
+          position: absolute;
+          top: 100%;
+          content: "";
+          width: 100%;
+          height: 2px;
+          margin-top: 5px;
+          background-color: $basic-green;
+        }
+      }
+    }
+
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: normal;
+
+    &--index {
+      color: $basic-white;
+    }
   }
 }

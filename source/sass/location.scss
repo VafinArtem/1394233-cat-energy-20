@@ -9,7 +9,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    position: relative;
     padding-top: 0;
   }
 }
@@ -17,6 +16,8 @@
 .location__inner {
   display: flex;
   justify-content: space-between;
+  padding: 0 20px;
+  padding-bottom: 26px;
 
   @media (min-width: $tablet-width) {
     justify-content: space-around;
@@ -24,19 +25,20 @@
   }
 
   @media (min-width: $desktop-width) {
-    position: absolute;
-    top: 95px;
+    position: relative;
+    top: 350px;
+    left: -330px;
+    z-index: 100;
     align-items: center;
     width: 570px;
     height: 201px;
+    margin-top: -201px;
     background-color: $basic-white;
   }
 }
 
 .location__text {
   margin: 0;
-  margin-bottom: 22px;
-  margin-right: 20px;
   width: 140px;
   font-family: $second-font;
   font-size: 14px;
@@ -44,11 +46,9 @@
   color: $special-dark-grey;
 
   &--invite {
-    margin-left: 20px;
-    margin-right: 0;
     font-family: inherit;
     font-size: 16px;
-    line-height: 18px;
+    line-height: 20px;
     color: inherit;
     text-transform: uppercase;
   }
@@ -70,5 +70,18 @@
 
   @media (min-width: $desktop-width) {
     margin: 0;
+  }
+}
+
+.location__map {
+  width: 100%;
+  height: 362px;
+
+  @media (min-width: $tablet-width) {
+    height: 396px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 400px;
   }
 }

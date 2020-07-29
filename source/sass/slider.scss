@@ -18,8 +18,7 @@
 .slider__control {
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 88px;
+  padding-top: 12px;
 }
 
 .slider__check {
@@ -29,8 +28,9 @@
 .slider__label {
   position: relative;
   display: block;
-  margin: 0 15px;
-  width: 84px;
+  margin: 0px 20px;
+  margin-top: 1px;
+  width: 79px;
   height: 14px;
   cursor: pointer;
 
@@ -62,7 +62,7 @@
 }
 
 .slider__check:checked ~ .slider__label::after {
-  transform: translateX(39px);
+  transform: translateX(37px);
 }
 
 .slider__text {

@@ -19,13 +19,13 @@
             <img src="img/logo-mobile.svg" alt="Cat Energy">
           </picture>
         </a>
-        <button class="main-nav__toggle main-nav__toggle--active" type="button">
+        <button class="main-nav__toggle main-nav__toggle--active main-nav__toggle--no-js js-button" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
       </div>
-      <ul class="main-nav__list">
+      <ul class="main-nav__list main-nav__list--active main-nav__list--no-js js-menu">
         <li class="main-nav__item"><a class="main-nav__link" href="index.html">главная</a></li>
-        <li class="main-nav__item"><a class="main-nav__link">каталог продукции</a></li>
+        <li class="main-nav__item"><a class="main-nav__link main-nav__link--active">каталог продукции</a></li>
         <li class="main-nav__item"><a class="main-nav__link" href="form.html">подбор программы</a></li>
       </ul>
     </nav>
@@ -37,15 +37,19 @@
       <ul class="catalog__list">
         <li class="catalog__item">
           <div class="catalog__inner catalog__inner--img">
-            <a href="#">
-              <img src="img/chicken-small-mobile@1x.jpg" width="140" height="144" alt="Банка с добавкой Cat Energy Pro 500 грамм">
+            <a class="catalog__link" href="#">
+              <picture>
+                <source media="(min-width: 1300px)" srcset="img/chicken-small-desktop@1x.png">
+                <source media="(min-width: 768px)" srcset="img/chicken-small-tablet@1x.png">
+                <img src="img/chicken-small-mobile@1x.jpg" alt="Банка с добавкой Cat Energy Pro 500 грамм">
+              </picture>
             </a>
           </div>
           <div class="catalog__inner">
             <a href="#" class="catalog__subtitle">Cat Energy PRO 500 г</a>
             <dl class="catalog__description properties">
               <div class="properties__wrapper">
-                <dt class="properties__item">Объем</dt>
+                <dt class="properties__item">Масса</dt>
                 <dd class="properties__description">500 г</dd>
               </div>
               <div class="properties__wrapper">
@@ -62,15 +66,19 @@
         </li>
         <li class="catalog__item">
           <div class="catalog__inner catalog__inner--img">
-            <a href="#">
-              <img src="img/chicken-big-mobile@1x.jpg" width="140" height="144" alt="Банка с добавкой Cat Energy Pro 1000 грамм">
+            <a class="catalog__link" href="#">
+              <picture>
+                <source media="(min-width: 1300px)" srcset="img/chicken-big-desktop@1x.png">
+                <source media="(min-width: 768px)" srcset="img/chicken-big-tablet@1x.png">
+                <img src="img/chicken-big-mobile@1x.jpg" alt="Банка с добавкой Cat Energy Pro 1000 грамм">
+              </picture>
             </a>
           </div>
           <div class="catalog__inner">
             <a href="#" class="catalog__subtitle">Cat Energy PRO 1000 г</a>
             <dl class="catalog__description properties">
               <div class="properties__wrapper">
-                <dt class="properties__item">Объем</dt>
+                <dt class="properties__item">Масса</dt>
                 <dd class="properties__description">1000 г</dd>
               </div>
               <div class="properties__wrapper">
@@ -87,15 +95,19 @@
         </li>
         <li class="catalog__item">
           <div class="catalog__inner catalog__inner--img">
-            <a href="#">
-              <img src="img/fish-small-mobile@1x.jpg" width="140" height="144" alt="Банка с добавкой Cat Energy Pro 500 грамм">
+            <a class="catalog__link" href="#">
+              <picture>
+                <source media="(min-width: 1300px)" srcset="img/fish-small-desktop@1x.png">
+                <source media="(min-width: 768px)" srcset="img/fish-small-tablet@1x.png">
+                <img src="img/fish-small-mobile@1x.jpg" alt="Банка с добавкой Cat Energy Pro 500 грамм">
+              </picture>
             </a>
           </div>
           <div class="catalog__inner">
             <a href="#" class="catalog__subtitle">Cat Energy PRO 500 г</a>
             <dl class="catalog__description properties">
               <div class="properties__wrapper">
-                <dt class="properties__item">Объем</dt>
+                <dt class="properties__item">Масса</dt>
                 <dd class="properties__description">500 г</dd>
               </div>
               <div class="properties__wrapper">
@@ -112,15 +124,19 @@
         </li>
         <li class="catalog__item">
           <div class="catalog__inner catalog__inner--img">
-            <a href="#">
-              <img src="img/fish-big-mobile@1x.jpg" width="140" height="144" alt="Банка с добавкой Cat Energy Pro 1000 грамм">
+            <a class="catalog__link" href="#">
+              <picture>
+                <source media="(min-width: 1300px)" srcset="img/fish-big-desktop@1x.png">
+                <source media="(min-width: 768px)" srcset="img/fish-big-tablet@1x.png">
+                <img src="img/fish-big-mobile@1x.jpg" alt="Банка с добавкой Cat Energy Pro 1000 грамм">
+              </picture>
             </a>
           </div>
           <div class="catalog__inner">
             <a href="#" class="catalog__subtitle">Cat Energy PRO 1000 г</a>
             <dl class="catalog__description properties">
               <div class="properties__wrapper">
-                <dt class="properties__item">Объем</dt>
+                <dt class="properties__item">Масса</dt>
                 <dd class="properties__description">1000 г</dd>
               </div>
               <div class="properties__wrapper">
@@ -137,15 +153,19 @@
         </li>
         <li class="catalog__item">
           <div class="catalog__inner catalog__inner--img">
-            <a href="#">
-              <img src="img/buckwheat-small-mobile@1x.jpg" width="140" height="144" alt="Банка с добавкой Cat Energy Slim 500 грамм">
+            <a class="catalog__link" href="#">
+              <picture>
+                <source media="(min-width: 1300px)" srcset="img/buckwheat-small-desktop@1x.png">
+                <source media="(min-width: 768px)" srcset="img/buckwheat-small-tablet@1x.png">
+                <img src="img/buckwheat-small-mobile@1x.jpg" alt="Банка с добавкой Cat Energy Slim 500 грамм">
+              </picture>
             </a>
           </div>
           <div class="catalog__inner">
             <a href="#" class="catalog__subtitle">Cat Energy Slim 500 г</a>
             <dl class="catalog__description properties">
               <div class="properties__wrapper">
-                <dt class="properties__item">Объем</dt>
+                <dt class="properties__item">Масса</dt>
                 <dd class="properties__description">500 г</dd>
               </div>
               <div class="properties__wrapper">
@@ -162,15 +182,19 @@
         </li>
         <li class="catalog__item">
           <div class="catalog__inner catalog__inner--img">
-            <a href="#">
-              <img src="img/buckwheat-big-mobile@1x.jpg" width="140" height="144" alt="Банка с добавкой Cat Energy Slim 1000 грамм">
+            <a class="catalog__link" href="#">
+              <picture>
+                <source media="(min-width: 1300px)" srcset="img/buckwheat-big-desktop@1x.png">
+                <source media="(min-width: 768px)" srcset="img/buckwheat-big-tablet@1x.png">
+                <img src="img/buckwheat-big-mobile@1x.jpg" alt="Банка с добавкой Cat Energy Slim 1000 грамм">
+              </picture>
             </a>
           </div>
           <div class="catalog__inner">
             <a href="#" class="catalog__subtitle">Cat Energy Slim 1000 г</a>
             <dl class="catalog__description properties">
               <div class="properties__wrapper">
-                <dt class="properties__item">Объем</dt>
+                <dt class="properties__item">Масса</dt>
                 <dd class="properties__description">1000 г</dd>
               </div>
               <div class="properties__wrapper">
@@ -187,15 +211,19 @@
         </li>
         <li class="catalog__item">
           <div class="catalog__inner catalog__inner--img">
-            <a href="#">
-              <img src="img/rice-small-mobile@1x.jpg" width="140" height="144" alt="Банка с добавкой Cat Energy Pro 500 грамм">
+            <a class="catalog__link" href="#">
+              <picture>
+                <source media="(min-width: 1300px)" srcset="img/rice-small-desktop@1x.png">
+                <source media="(min-width: 768px)" srcset="img/rice-small-tablet@1x.png">
+                <img src="img/rice-small-mobile@1x.jpg" alt="Банка с добавкой Cat Energy Pro 500 грамм">
+              </picture>
             </a>
           </div>
           <div class="catalog__inner">
             <a href="#" class="catalog__subtitle">Cat Energy Slim 500 г</a>
             <dl class="catalog__description properties">
               <div class="properties__wrapper">
-                <dt class="properties__item">Объем</dt>
+                <dt class="properties__item">Масса</dt>
                 <dd class="properties__description">500 г</dd>
               </div>
               <div class="properties__wrapper">
@@ -231,7 +259,7 @@
                 <dd class="properties__description properties__description--add">200 Р.</dd>
               </div>
             </dl>
-            <a href="#" class="button catalog__button">заказать</a>
+            <a href="#" class="button additional__button">заказать</a>
           </li>
           <li class="additional__item">
             <h3 class="title additional__subtitle">питьевая вода</h3>
@@ -241,7 +269,7 @@
                 <dd class="properties__description properties__description--add">50 Р.</dd>
               </div>
             </dl>
-            <a href="#" class="button catalog__button">заказать</a>
+            <a href="#" class="button additional__button">заказать</a>
           </li>
           <li class="additional__item">
             <h3 class="title additional__subtitle">молоко</h3>
@@ -251,7 +279,7 @@
                 <dd class="properties__description properties__description--add">100 Р.</dd>
               </div>
             </dl>
-            <a href="#" class="button catalog__button">заказать</a>
+            <a href="#" class="button additional__button">заказать</a>
           </li>
           <li class="additional__item">
             <h3 class="title additional__subtitle">витамины</h3>
@@ -261,23 +289,23 @@
                 <dd class="properties__description properties__description--add">300 Р.</dd>
               </div>
             </dl>
-            <a href="#" class="button catalog__button">заказать</a>
+            <a href="#" class="button additional__button">заказать</a>
           </li>
         </ul>
         <article class="gift">
-          <p class="gift__text">Закажите все и получите чехол для кота в подарок!</p>
+          <p class="gift__text">Закажите все<br>и получите чехол для кота в подарок!</p>
         </article>
     </section>
   </main>
 
   <footer class="page-footer">
-    <section class="location container">
+    <section class="location">
       <h2 class="visually-hidden">Как нас найти</h2>
       <div class="location__inner">
-        <p class="location__text location__text--invite">приглашаем к сотрудничеству дилеров!</p>
+        <p class="location__text location__text--invite">приглашаем<br>к сотрудничеству дилеров!</p>
         <p class="location__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </div>
-      <img src="img/bg-map-mobile@1x.png" width="320" height="400" alt="Карта с нашим местом расположения по адресу: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+      <div class="location__map" id="map"></div>
     </section>
     <div class="page-footer__inner container">
       <a class="logo logo--footer">
@@ -341,6 +369,9 @@
       </section>
     </div>
   </footer>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=e4063060-41f4-4dfd-941f-95a7a87d136d" type="text/javascript"></script>
+  <script src="js/map.js"></script>
+  <script src="js/menu.js"></script>
 </body>
 
 </html>

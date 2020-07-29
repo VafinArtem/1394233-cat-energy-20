@@ -1,5 +1,5 @@
 .example {
-  padding-top: 27px;
+  padding-top: 29px;
   background-color: $special-grey-adv;
 
   @media (min-width: $tablet-width) {
@@ -37,7 +37,7 @@
 }
 
 .example__title {
-  margin-bottom: 33px;
+  margin-bottom: 35px;
 }
 
 .example__text {
@@ -98,6 +98,7 @@
   height: 56px;
   margin-bottom: 34px;
   margin-top: 25px;
+  padding-bottom: 3px;
   border: 1px solid $special-grey-mid;
   border-radius: 3px;
 
@@ -120,8 +121,8 @@
 
 .example__item {
   position: absolute;
-  bottom: -15px;
-  width: 87px;
+  bottom: -16px;
+  width: 86px;
   font-family: $second-font;
   font-size: 12px;
   line-height: 12px;
@@ -129,7 +130,7 @@
   background-color: $special-grey-adv;
 
   &--weight {
-    width: 77px;
+    width: 82px;
   }
 
   @media (min-width: $tablet-width) {
@@ -146,6 +147,9 @@
 }
 
 .example__slider {
+  margin-top: 18px;
+  padding-bottom: 35px;
+
   @media (min-width: $desktop-width) {
     width: 570px;
   }

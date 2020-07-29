@@ -4,31 +4,70 @@
   align-items: center;
   padding: 0 20px;
   padding-top: 26px;
+
+  @media (min-width: $tablet-width) {
+    padding: 38px 38px;
+    padding-top: 55px;
+  }
 }
 
 .pagination__description {
   margin: 0;
-  padding-top: 23px;
+  margin-top: 23px;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    width: 134px;
+    margin-top: 49px;
+    font-size: 20px;
+    line-height: 22px;
+    text-align: center;
+  }
 }
 
 .pagination__text {
   margin: 0;
-  padding-top: 8px;
-  padding-bottom: 21px;
+  margin-top: 8px;
+  margin-bottom: 21px;
   font-family: $second-font;
   font-size: 12px;
   line-height: 16px;
+
+  @media (min-width: $tablet-width) {
+    width: 167px;
+    margin-top: 23px;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+  }
 }
 
 .pagination__button {
+  font-size: 16px;
+  line-height: 0px;
   text-decoration: none;
   background-color: $basic-grey;
   color: $special-dark-grey;
-  margin-bottom: 25px;
 
+  &:hover,
+  &:focus {
+    background-color: $special-grey;
+  }
+
+  &:active {
+    color: transparentize($special-dark-grey, 0.3);
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 248px;
+    margin-top: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 168px;
+  }
   &--plus {
     width: 30px;
     height: 30px;
@@ -36,5 +75,12 @@
     background: none;
     background-image: url("../img/icon-plus-mobile.svg");
     cursor: pointer;
+
+    @media (min-width: $tablet-width) {
+      width: 60px;
+      height: 60px;
+      margin: 0;
+      background-image: url("../img/icon-plus.svg");
+    }
   }
 }

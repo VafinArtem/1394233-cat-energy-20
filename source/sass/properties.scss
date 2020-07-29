@@ -9,7 +9,13 @@
   }
 
   @media (min-width: $tablet-width) {
+    padding: 0px 1px;
+    padding-bottom: 7px;
     border-bottom: 1px solid $special-grey-mid;
+
+    &:not(:first-child) {
+      padding-top: 8px;
+    }
   }
 }
 

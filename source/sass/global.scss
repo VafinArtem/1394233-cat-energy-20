@@ -38,7 +38,7 @@ img {
 .title {
   margin: 0;
   font-size: 36px;
-  line-height: 40px;
+  line-height: 36px;
   font-style: normal;
   font-weight: normal;
 
@@ -52,7 +52,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 280px;
+  width: 280px;
   min-height: 40px;
   font-family: inherit;
   font-size: 14px;
@@ -61,6 +61,15 @@ img {
   color: $basic-white;
   border: none;
   background-color: $basic-green;
+
+  &:hover,
+  &:focus {
+    background-color: $special-green;
+  }
+
+  &:active {
+    color: transparentize($basic-white, 0.3);
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
