@@ -223,13 +223,27 @@
   line-height: 16px;
   color: $basic-black;
 
+  &:hover,
+  &:focus {
+    &:after {
+      width: 32px;
+      height: 12px;
+      background-image: url("../img/icon-right-arrow-verylong.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   &::after {
     position: absolute;
     content: "";
     left: 100%;
     top: 2px;
     width: 24px;
-    height: 12px;
+    height: 10px;
     margin-left: 13px;
     background-image: url("../img/icon-right-arrow-long.svg");
     background-repeat: no-repeat;
