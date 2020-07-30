@@ -17,4 +17,9 @@
     align-items: center;
     justify-content: space-between;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 40px;
+    padding-top: 37px;
+  }
 }
