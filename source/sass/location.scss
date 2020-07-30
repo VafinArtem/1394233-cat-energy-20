@@ -28,13 +28,15 @@
 
   @media (min-width: $desktop-width) {
     position: relative;
-    top: 350px;
-    left: -330px;
-    z-index: 100;
+    top: 295px;
+    left: -325px;
+    z-index: 50;
     align-items: center;
     width: 570px;
     height: 201px;
     margin-top: -201px;
+    margin-bottom: 0;
+    padding-top: 5px;
     background-color: $basic-white;
   }
 }
@@ -83,6 +85,14 @@
 
   @media (min-width: $desktop-width) {
     margin: 0;
+
+    &--invite {
+      margin-left: 2px;
+    }
+
+    &--address {
+      text-align: left;
+    }
   }
 }
 
