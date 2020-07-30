@@ -87,7 +87,7 @@
       <div class="example__box container">
         <div class="example__wrapper">
           <h2 class="title example__title">Живой пример</h2>
-          <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
+          <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и <br>по-прежнему спит по 16 часов в день. </p>
           <dl class="example__list">
             <div class="example__inner">
               <dt class="example__item example__item--weight">снижение веса</dt>
@@ -103,16 +103,32 @@
         <div class="example__slider slider">
           <ul class="slider__list">
             <li class="slider__item slider__item--active">
-              <img src="img/before-mobile@1x.png" width="320" height="240" alt="Фото толстого кота до употребления нашего корма">
+              <picture>
+                <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png">
+                <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png">
+                <img src="img/before-mobile@1x.png" alt="Фото толстого кота до употребления нашего корма">
+              </picture>
             </li>
             <li class="slider__item">
-              <img src="img/after-mobile@1x.png" width="320" height="240" alt="Фото стройного кота после употребления нашего корма">
+              <picture>
+                <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png">
+                <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png">
+                <img src="img/after-mobile@1x.png" alt="Фото худого кота после употребления нашего корма">
+              </picture>
             </li>
           </ul>
-          <div class="slider__control">
+          <div class="slider__control slider__control--check">
             <div class="slider__text slider__text--before">было</div>
             <input class="slider__check" type="checkbox" id="slider__control">
-            <label class="slider__label" for="slider__control">
+            <label class="slider__label slider__label--check" for="slider__control">
+              <span class="visually-hidden">Переключение слайда</span>
+            </label>
+            <div class="slider__text slider__text--after">стало</div>
+          </div>
+          <div class="slider__control slider__control--range">
+            <div class="slider__text slider__text--before">было</div>
+            <input class="slider__range" type="range" id="slider__range">
+            <label class="slider__label" for="slider__range">
               <span class="visually-hidden">Переключение слайда</span>
             </label>
             <div class="slider__text slider__text--after">стало</div>

@@ -3,6 +3,7 @@
   background-color: $special-grey-adv;
 
   @media (min-width: $tablet-width) {
+    padding-top: 43px;
     background: linear-gradient(to bottom, $basic-white 50%, $special-grey-adv 50%);
   }
 
@@ -38,6 +39,10 @@
 
 .example__title {
   margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 64px;
+  }
 }
 
 .example__text {
@@ -46,6 +51,12 @@
   font-family: $second-font;
   font-size: 14px;
   line-height: 18px;
+
+  @media (max-width: $mobile-width-only) {
+    br {
+      display: none;
+    }
+  }
 
   &--cost {
     font-family: inherit;
@@ -63,8 +74,9 @@
     &--cost {
       width: 174px;
       margin-left: auto;
+      padding-top: 14px;
       font-size: 20px;
-      line-height: 20px;
+      line-height: 29px;
       text-align: right;
     }
   }
@@ -83,9 +95,11 @@
   display: flex;
   justify-content: space-between;
   margin: 0;
+  margin-top: 25px;
 
   @media (min-width: $tablet-width) {
     width: 366px;
+    margin-top: 51px;
   }
 }
 
@@ -97,7 +111,6 @@
   width: 124px;
   height: 56px;
   margin-bottom: 34px;
-  margin-top: 25px;
   padding-bottom: 3px;
   border: 1px solid $special-grey-mid;
   border-radius: 3px;
@@ -139,6 +152,10 @@
     font-size: 14px;
     line-height: 14px;
     background-color: $basic-white;
+
+    &--weight {
+      width: 114px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -150,6 +167,10 @@
   margin-top: 18px;
   padding-bottom: 35px;
 
+  @media (min-width: $tablet-width) {
+    margin-top: 31px;
+    padding-bottom: 68px;
+  }
   @media (min-width: $desktop-width) {
     width: 570px;
   }

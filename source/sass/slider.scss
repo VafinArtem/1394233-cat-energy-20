@@ -13,12 +13,29 @@
   &--active {
     display: block;
   }
+
+  @media (min-width: $tablet-width) {
+    text-align: right;
+  }
 }
 
 .slider__control {
   display: flex;
   justify-content: center;
-  padding-top: 12px;
+
+  &--check {
+    padding-top: 12px;
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  &--range {
+    padding-top: 7px;
+    @media (max-width: $mobile-width-only){
+      display: none;
+    }
+  }
 }
 
 .slider__check {
@@ -26,38 +43,40 @@
 }
 
 .slider__label {
-  position: relative;
-  display: block;
-  margin: 0px 20px;
-  margin-top: 1px;
-  width: 79px;
-  height: 14px;
-  cursor: pointer;
-
-  &::before,
-  &::after {
-    position: absolute;
+  &--check {
+    position: relative;
     display: block;
-    content: "";
-  }
+    margin: 0px 20px;
+    margin-top: 1px;
+    width: 79px;
+    height: 14px;
+    cursor: pointer;
 
-  &::before {
-    width: 84px;
-    height: 16px;
-    border: 1px solid $special-grey-mid;
-    border-radius: 6px;
-    background-color: $basic-white;
-  }
+    &::before,
+    &::after {
+      position: absolute;
+      display: block;
+      content: "";
+    }
 
-  &::after {
-    top: 5px;
-    left: 6px;
-    width: 35px;
-    height: 6px;
-    border-radius: 6px;
-    background-color: $basic-green;
-    transition-timing-function: ease-in;
-    transition-duration: 200ms;
+    &::before {
+      width: 84px;
+      height: 16px;
+      border: 1px solid $special-grey-mid;
+      border-radius: 6px;
+      background-color: $basic-white;
+    }
+
+    &::after {
+      top: 5px;
+      left: 6px;
+      width: 35px;
+      height: 6px;
+      border-radius: 6px;
+      background-color: $basic-green;
+      transition-timing-function: ease-in;
+      transition-duration: 200ms;
+    }
   }
 }
 
@@ -65,8 +84,36 @@
   transform: translateX(37px);
 }
 
+.slider__range {
+  -webkit-appearance: none;
+  width: 428px;
+  height: 6px;
+  margin: 0 22px;
+  background-color: $special-grey-mid-light;
+  border-radius: 6px;
+  outline: none;
+
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    position: relative;
+    width: 34px;
+    height: 34px;
+    background-color: $basic-green;
+    border: 1px solid $special-grey-mid;
+    border-radius: 50%;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.16), inset 0 0 0 12px $basic-white;
+  }
+}
+
 .slider__text {
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -6px;
+    padding-bottom: 5px;
+    font-size: 20px;
+    border-bottom: dotted 1px $special-grey-mid-dark;
+  }
 }
