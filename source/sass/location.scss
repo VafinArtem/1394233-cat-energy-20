@@ -2,7 +2,6 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding-top: 28px;
 
   &--index {
     background-color: $basic-white;
@@ -17,11 +16,14 @@
   display: flex;
   justify-content: space-between;
   padding: 0 20px;
+  margin-top: 28px;
   padding-bottom: 26px;
 
   @media (min-width: $tablet-width) {
-    justify-content: space-around;
     width: 100%;
+    padding: 0 72px;
+    margin-top: 64px;
+    margin-bottom: 57px;
   }
 
   @media (min-width: $desktop-width) {
@@ -40,9 +42,6 @@
 .location__text {
   margin: 0;
   width: 140px;
-  font-family: $second-font;
-  font-size: 14px;
-  line-height: 20px;
   color: $special-dark-grey;
 
   &--invite {
@@ -53,18 +52,32 @@
     text-transform: uppercase;
   }
 
+  &--address {
+    font-family: $second-font;
+    font-size: 14px;
+    line-height: 20px;
+
+    @media (max-width: $mobile-width-only) {
+      br {
+        display: none;
+      }
+    }
+  }
+
   @media (min-width: $tablet-width) {
     width: 171px;
-    margin-right: 0;
-    margin-left: 0;
-    font-size: 16px;
-    line-height: 20px;
-    text-align: right;
 
     &--invite {
       font-size: 20px;
-      line-height: 21px;
+      line-height: 25px;
       text-align: left;
+      margin-top: 2px;
+    }
+
+    &--address {
+      font-size: 16px;
+      line-height: 20px;
+      text-align: right;
     }
   }
 
