@@ -3,13 +3,21 @@
   align-items: center;
   justify-content: center;
   width: 280px;
-  height: 289px;
+  min-height: 289px;
   margin: 0 20px;
   margin-top: 39px;
   margin-bottom: 35px;
   background-color: $basic-green;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    width: 100%;
+    min-height: 200px;
+    padding-right: 124px;
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+  }
 
   @media (min-width: $desktop-width) {
     margin: 0;
@@ -37,5 +45,17 @@
     margin-left: -28px;
     background-image: url("../img/icon-gift.svg");
     background-repeat: no-repeat;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-left: auto;
+    margin-bottom: -4px;
+    text-align: left;
+
+    &::after {
+      bottom: 7px;
+      left: -305px;
+    }
   }
 }
