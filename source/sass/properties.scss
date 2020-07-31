@@ -11,10 +11,15 @@
   @media (min-width: $tablet-width) {
     padding: 0px 1px;
     padding-bottom: 7px;
-    border-bottom: 1px solid $special-grey-mid;
 
     &:not(:first-child) {
       padding-top: 8px;
+    }
+
+    &--add {
+      padding: 0;
+      padding-top: 3px;
+      width: 287px;
     }
   }
 }
@@ -38,5 +43,19 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 16px;
+
+    &--add {
+      min-width: 50px;
+      text-align: right;
+    }
+  }
+}
+
+.properties__item {
+  @media (min-width: $tablet-width) {
+    &--add {
+      flex-grow: 1;
+      margin-right: 42px;
+    }
   }
 }
