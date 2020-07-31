@@ -17,13 +17,24 @@
       background-color: $basic-green;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 77px;
+    margin-bottom: 86px;
+
+    &::before {
+      top: 100px;
+    }
+  }
 }
 
 .additional__wrapper {
   @media (min-width: $desktop-width) {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    column-gap: 80px;
+    padding: 0;
+    padding-right: 40px;
   }
 }
 
@@ -81,8 +92,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 100%;
-    margin-bottom: 81px;
+    grid-column: 1/-1;
+    width: 411px;
+    margin-bottom: 80px;
+    margin-right: auto;
+    padding-left: 40px;
   }
 }
 
@@ -99,8 +113,11 @@
 
   @media (min-width: $desktop-width) {
     flex-grow: 1;
+    width: 895px;
     padding: 0;
     margin: 0;
+    margin-left: 40px;
+    border: none;
   }
 }
 
@@ -126,6 +143,22 @@
       border-bottom: none;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 0;
+    padding-top: 15px;
+    padding-bottom: 16px;
+
+    &:first-child {
+      border-top: 1px solid $special-grey-mid;
+    }
+
+    &:last-child {
+      border-bottom: 1px solid $special-grey-mid;;
+    }
+  }
 }
 
 .additional__subtitle {
@@ -141,11 +174,20 @@
     font-size: 20px;
     line-height: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
 }
 
 .additional__description {
   margin: 0;
   margin-bottom: 15px;
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    margin-right: 32px;
+  }
 }
 
 .additional__button {
@@ -157,5 +199,9 @@
   @media (min-width: $tablet-width) {
     width: 100%;
     margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 244px;
   }
 }

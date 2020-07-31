@@ -22,6 +22,12 @@
       width: 287px;
     }
   }
+
+  @media (min-width: $tablet-width) {
+    &--add {
+      width: 294px;
+    }
+  }
 }
 
 .properties__description {
@@ -47,6 +53,12 @@
     &--add {
       min-width: 50px;
       text-align: right;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    &--add {
+      text-align: left;
     }
   }
 }
