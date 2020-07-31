@@ -50,6 +50,7 @@
 }
 
 .form__name {
+  position: relative;
   display: flex;
   align-items: center;
   padding: 0 20px;
@@ -63,6 +64,11 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $special-dark-grey;
+
+  &--radio,
+  &--check {
+    margin-left: 50px;
+  }
 }
 
 .form__input {
@@ -146,6 +152,7 @@
 
 .form__item {
   @media (min-width: $tablet-width) {
+    margin-bottom: 10px;
     &--add {
       width: 323px;
     }
@@ -162,4 +169,116 @@
   margin: 0;
   margin-top: 21px;
   text-align: center;
+}
+
+.form__radio {
+  appearance: none;
+
+  &:hover,
+    &:focus {
+      &+.form__box--radio {
+        border: 1px solid $special-grey-adv-light;
+      }
+    }
+
+  &:disabled {
+    &+.form__box--radio,
+    &~.form__description--radio {
+      opacity: 0.3;
+    }
+  }
+
+  &:checked {
+    &+.form__box--radio {
+      background-color: $basic-green;
+      box-shadow: inset 0 0 0 11px $basic-white;
+    }
+
+    &:hover,
+    &:focus {
+      &+.form__box--radio {
+        border: 1px solid $special-grey-adv-light;
+      }
+    }
+
+    &:disabled {
+      &+.form__box--radio,
+      &~.form__description--radio {
+        opacity: 0.3;
+      }
+    }
+  }
+}
+
+.form__check {
+  appearance: none;
+
+
+  &:checked {
+    &+.form__box--check {
+      &::after {
+        position: absolute;
+        left: 14px;
+        top: 16px;
+        content: "";
+        width: 17px;
+        height: 2px;
+        background-color: $basic-green;
+        transform: rotate(-45deg);
+      }
+
+      &::before {
+        position: absolute;
+        left: 10px;
+        top: 18px;
+        content: "";
+        width: 8px;
+        height: 2px;
+        background-color: $basic-green;
+        transform: rotate(45deg);
+      }
+
+
+    }
+  }
+
+  &:hover,
+    &:focus {
+      &+.form__box--check {
+        border: 1px solid $special-grey-adv-light;
+      }
+    }
+
+  &:disabled {
+    &+.form__box--check {
+      opacity: 0.3;
+    }
+
+    &~.form__description--check {
+      opacity: 0.3;
+    }
+
+    &+.form__box--check {
+      &::after,
+      &::before {
+        background-color: opacify($basic-green, 1);
+      }
+    }
+  }
+
+}
+
+.form__box {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border: 1px solid $special-grey-mid;
+  &--radio {
+    content: "";
+    border-radius: 50%;
+  }
+
+  &--check {
+    content: "";
+  }
 }
