@@ -9,7 +9,7 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 82px;
-    background: linear-gradient(to bottom, $basic-white 0%, $basic-white 26%, $special-grey-adv 26%, $special-grey-adv 100%);
+    background: linear-gradient(to bottom, $basic-white 0%, $basic-white 32%, $special-grey-adv 32%, $special-grey-adv 100%);
   }
 }
 
@@ -187,8 +187,8 @@
   padding-bottom: 35px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 31px;
-    padding-bottom: 68px;
+    margin-top: 36px;
+    padding-bottom: 81px;
   }
 
   @media (min-width: $desktop-width) {
@@ -198,5 +198,6 @@
     left: 40px;
     top: $slider-shift;
     margin-bottom: $slider-shift;
+    margin-top: 31px;
   }
 }

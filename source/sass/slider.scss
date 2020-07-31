@@ -83,6 +83,11 @@
       transition-duration: 200ms;
     }
   }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .slider__check:checked ~ .slider__label::after {
@@ -91,12 +96,51 @@
 
 .slider__range {
   -webkit-appearance: none;
+  position: relative;
   width: 428px;
   height: 6px;
   margin: 0 22px;
   background-color: $special-grey-mid-light;
   border-radius: 6px;
   outline: none;
+
+  &::before,
+  &::after {
+    position: absolute;
+    top: -13px;
+    padding-bottom: 1px;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    border-bottom: dotted 1px $special-grey-mid-dark;
+  }
+
+  &::before {
+    right: 100%;
+    content: "было";
+    margin-right: 24px;
+  }
+
+  &::after {
+    left: 100%;
+    content: "стало";
+    margin-left: 21px;
+  }
+
+  &:hover,
+  &:focus {
+    &::after,
+    &::before {
+      border-bottom: solid 1px $special-grey-mid-dark;
+    }
+  }
+
+  &:active {
+    &::after,
+    &::before {
+      border-bottom: none;
+    }
+  }
 
   &::-webkit-slider-thumb {
     -webkit-appearance: none;
@@ -107,6 +151,17 @@
     border: 1px solid $special-grey-mid;
     border-radius: 50%;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.16), inset 0 0 0 12px $basic-white;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.19), inset 0 0 0 12px $basic-white;
+    }
+
+    &:active {
+      border: 1px solid $basic-green;
+      box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2), inset 0 0 0 12px $basic-white;
+    }
   }
 }
 
