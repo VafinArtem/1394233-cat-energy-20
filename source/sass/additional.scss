@@ -119,6 +119,10 @@
     padding: 27px 38px;
     border-top: none;
     border-bottom: 1px solid $special-grey-mid;
+
+    &:last-child {
+      border-bottom: none;
+    }
   }
 }
 
