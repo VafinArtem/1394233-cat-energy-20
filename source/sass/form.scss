@@ -31,6 +31,11 @@
       justify-content: flex-start;
       width: 100%;
     }
+
+    &--btn {
+      justify-content: flex-start;
+      padding: 0;
+    }
   }
 }
 
@@ -100,6 +105,14 @@
       margin: 0;
       margin-bottom: 70px;
     }
+
+    &--comment {
+      margin-bottom: 68px;
+    }
+
+    &--add {
+      margin-bottom: 43px;
+    }
   }
 }
 
@@ -154,6 +167,7 @@
     }
 
     &--contact {
+      min-width: 570px;
       padding: 0;
 
       &:not(:last-child) {
@@ -196,6 +210,19 @@
       margin-left: 52px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    &--check {
+      margin: 0;
+    }
+
+    &--radio,
+    &--check {
+      margin-left: 57px;
+    }
+
+
+  }
 }
 
 .form__input {
@@ -230,6 +257,15 @@
       width: 631px;
       height: 174px;
       margin: 0 40px;
+      padding: 10px 18px;
+    }
+  }
+
+  @media (min-width:$tablet-width) {
+    &--comment {
+      width: 100%;
+      height: 174px;
+      margin: 0;
       padding: 10px 18px;
     }
   }
@@ -310,9 +346,7 @@
 
   @media (min-width: $desktop-width) {
     &--add {
-      flex-direction: row;
-      justify-content: space-between;
-      flex-wrap: wrap;
+      padding: 0;
     }
   }
 }
@@ -336,13 +370,15 @@
         margin-bottom: 42px;
       }
     }
-
-
   }
 
   @media (min-width: $desktop-width) {
     &--add {
-      width: auto;
+      width: 245px;
+
+      &:first-child {
+        margin-bottom: 0;
+      }
     }
   }
 }
@@ -360,6 +396,11 @@
     margin-top: 17px;
     margin-right: 42px;
     font-size: 16px;
+  }
+
+  @media (min-width: $tablet-width) {
+    flex-grow: 0;
+    margin-right: 0;
   }
 }
 
@@ -411,29 +452,27 @@
 
   &:checked {
     &+.form__box--check {
-      &::after {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        content: "";
-        width: 17px;
-        height: 2px;
-        margin-top: -1px;
-        margin-left: -5px;
-        background-color: $basic-green;
-        transform: rotate(-48deg);
-      }
-
+      &::after,
       &::before {
         position: absolute;
         left: 50%;
         top: 50%;
         content: "";
-        width: 10px;
         height: 2px;
+        background-color: $basic-green;
+      }
+
+      &::after {
+        width: 17px;
+        margin-top: -1px;
+        margin-left: -5px;
+        transform: rotate(-48deg);
+      }
+
+      &::before {
+        width: 10px;
         margin-top: 1px;
         margin-left: -10px;
-        background-color: $basic-green;
         transform: rotate(46deg);
       }
     }
@@ -493,5 +532,10 @@
     width: 282px;
     min-height: 52px;
     font-size: 20px;
+  }
+
+  @media (min-width:$tablet-width) {
+    width: 568px;
+    margin-right: 83px;
   }
 }
