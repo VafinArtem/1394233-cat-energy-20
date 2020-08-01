@@ -40,15 +40,15 @@
           <fieldset class="form__block form__block--about">
             <legend class="visually-hidden">О коте</legend>
             <label class="form__name form__name--about">
-              <span class="form__description">ИМЯ:*</span>
+              <span class="form__description form__description--about">ИМЯ:*</span>
               <input type="text" class="form__input" name="name" placeholder="барсик" required>
             </label>
             <label class="form__name form__name--about">
-              <span class="form__description">Вес (кг):*</span>
+              <span class="form__description form__description--about">Вес (кг):*</span>
               <input type="text" class="form__input" name="weight" placeholder="7" required>
             </label>
             <label class="form__name form__name--about">
-              <span class="form__description">Возраст (лет):</span>
+              <span class="form__description form__description--about">Возраст (лет):</span>
               <input type="text" class="form__input" name="age" placeholder="7">
             </label>
           </fieldset>
@@ -79,13 +79,13 @@
             </ul>
           </fieldset>
         </div>
-        <fieldset class="form__block">
+        <fieldset class="form__block form__block--contakt">
           <legend class="title form__title form__title--contakt">Контактные данные (владельца кота)</legend>
-          <label class="form__name">
+          <label class="form__name form__name--contact">
             <span class="form__description">E-mail:*</span>
             <input type="email" class="form__input form__input--email" name="email" placeholder="kuklachev@gmail.com" required>
           </label>
-          <label class="form__name">
+          <label class="form__name form__name--contact">
             <span class="form__description">Телефон:*</span>
             <input type="tel" class="form__input form__input--tel" name="tel" placeholder="8 (960) 900-60-90" required>
           </label>
@@ -95,7 +95,7 @@
           <label class="visually-hidden" for="comment">Напишите комментарий</label>
           <textarea class="form__input form__input--comment" name="comment" id="comment" cols="30" rows="10" placeholder="Расскажите обо всех повАдках кота"></textarea>
         </fieldset>
-        <fieldset class="form__block">
+        <fieldset class="form__block form__block--add">
           <legend class="title form__title form__title--add">Дополнительно</legend>
           <ul class="form__list form__list--add">
             <li class="form__item form__item--add">
@@ -128,7 +128,7 @@
             </li>
           </ul>
         </fieldset>
-        <div class="form__inner">
+        <div class="form__inner form__inner--btn">
           <button class="button form__button" type="submit">отправить заявку</button>
           <p class="form__text">* — Обязательные поля</p>
         </div>
