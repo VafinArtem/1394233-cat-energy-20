@@ -1,0 +1,445 @@
+[33mcommit 79b2b65feab91ad8c34e2a3987c5e04472803aaa[m[33m ([m[1;36mHEAD -> [m[1;32mmodule5-task2[m[33m)[m
+Author: Vafin Artem <a.vafin85@gmail.com>
+Date:   Sat Aug 1 17:16:21 2020 +0500
+
+    Стилизовал блок Form по PP для tablet версии
+
+[33mcommit c7b077527fb9c33ce99ed54f56cdfb249f3d6d28[m
+Author: Vafin Artem <a.vafin85@gmail.com>
+Date:   Sat Aug 1 14:05:42 2020 +0500
+
+    Стилизовал блок Form по PP для mobile версии
+
+[33mcommit 9ad0fb826bb54622bfbffbb0c3d99b6b022d741b[m
+Author: Vafin Artem <a.vafin85@gmail.com>
+Date:   Sat Aug 1 11:45:36 2020 +0500
+
+    Навчал стилизацию блока Program-select и Form по PP
+
+[33mcommit dd76238732438fc7b78383d2d05914a2c27acbc4[m
+Author: Vafin Artem <a.vafin85@gmail.com>
+Date:   Sat Aug 1 01:48:33 2020 +0500
+
+    Стилизовал радио баттон и цекбоксы
+
+[33mcommit df3e28312f98cd0849abfa286a01c0a014527d32[m
+Author: Vafin Artem <a.vafin85@gmail.com>
+Date:   Fri Jul 31 14:30:38 2020 +0500
+
+    Поправил блок Location на страницах каталога и формы
+
+[33mcommit 6806a682c313fe992a293df61e7a2778e9ba04a7[m
+Author: Vafin Artem <a.vafin85@gmail.com>
+Date:   Fri Jul 31 14:19:54 2020 +0500
+
+    Стилизовал блоки gift и additional по PP desktop версии
+
+[33mcommit a725efc3f109f88e6828d83b29b146fa7d19b910[m
+Author: Vafin Artem <a.vafin85@gmail.com>
+Date:   Fri Jul 31 13:03:33 2020 +0500
+
+    Стилизовал блоки gift и additional по PP
+
+[33mcommit a7dfd6b7167e432f1d91b7fbe0cca9ec54b58f82[m
+Author: Vafin Artem <a.vafin85@gmail.com>
+Date:   Fri Jul 31 12:44:41 2020 +0500
+
+    Стилизовал блоки additional по PP
+
+[33mcommit 7ceca8f8150b159295bba52c40ff864094eaf040[m
+Author: Vafin Artem <a.vafin85@gmail.com>
+Date:   Fri Jul 31 12:42:15 2020 +0500
+
+    Стилизовал блоки additional и propertise по PP
+
+[33mcommit 7af3cdc338354df56e449de0c655821b3be18f59[m
+Author: Vafin Artem <a.vafin85@gmail.com>
+Date:   Fri Jul 31 12:02:28 2020 +0500
+
+    Добавил линию у заголовка в блоке Additional tablet версии
+
+[33mcommit 0644e06cae3d58719d06ec232fa386d871fb2672[m
+Author: Vafin Artem <a.vafin85@gmail.com>
+Date:   Fri Jul 31 10:57:18 2020 +0500
+
+    Убрал закоментированный блок
+
+[33mcommit c190d5214f94a42a6220036ac38ed265145a99b0[m
+Author: Vafin Artem <a.vafin85@gmail.com>
+Date:   Fri Jul 31 10:50:35 2020 +0500
+
+    Стилизовал блоки example slider по PP добавил состония фокуса и активные
+
+[33mcommit 9af6c1339e14df7a5e4fe7cf60b2f839c64e3816[m
+Author: Vafin Artem <a.vafin85@gmail.com>
+Date:   Thu Jul 30 18:52:34 2020 +0500
+
+    Стилизовал блок page-footer на desktop версии по PP
+
+[33mcommit 2e2586909c1215164a51dc6e34e223eb3783af47[m
+Author: Vafin Artem <a.vafin85@gmail.com>
+Date:   Thu Jul 30 18:50:59 2020 +0500
+
+    Стилизовал блок Location на desktop версии по PP
+
+[33mcommit 96f0a508eaf975c0d95a98a7e31d6fa8553cf2c0[m
+Author: Vafin Artem <a.vafin85@gmail.com>
+Date:   Thu Jul 30 18:39:59 2020 +0500
+
+    Стилизовал блок Example и Slider на desktop версии по PP
+
+[33mcommit de8a3198e5ce482aaa5f7fdfa11c25b87b553b47[m
+Author: Vafin Artem <a.vafin85@gmail.com>
+Date:   Thu Jul 30 17:31:28 2020 +0500
+
+    Правка блока social мобильной версии
+
+[33mcommit 2eb3dfdd9ea41353056c3b9f672316b0839c8ceb[m
+Author: Vafin Artem <a.vafin85@gmail.com>
+Date:   Thu Jul 30 17:08:11 2020 +0500
+
+    Перенес отредктированый блок page-footer на страницу каталога и формы
+
+[33mcommit 30fb995571447c88f132f32aff2dfcb175c2c3b6[m
+Author: Vafin Artem <a.vafin85@gmail.com>
+Date:   Thu Jul 30 17:01:10 2020 +0500
+
+    Стилизовал блок page-footer и copyright на tablet версии по PP
+
+[33mcommit 8633d392f66957ba34a0bd01c80037b6a4244bc3[m
+Author: Vafin Artem <a.vafin85@gmail.com>
+Date:   Thu Jul 30 16:50:07 2020 +0500
+
+    Стилизовал блок page-footer и social на tablet версии по PP
+
+[33mcommit d68312ba58303656d9faad1615ee91f0dd47e8ac[m
+Author: Vafin Artem <a.vafin85@gmail.com>
+Date:   Thu Jul 30 16:07:06 2020 +0500
+
+    Стилизовал блок Example на tablet версии по PP
+
+[33mcommit ef9a73f8f309f9d3bccff2ac5be64f9da3c64ee7[m
+Author: Vafin Artem <a.vafin85@gmail.com>
+Date:   Thu Jul 30 16:01:42 2020 +0500
+
+    Стилизовал блок Location на tablet версии по PP
+
+[33mcommit 26805cfc829564860d9780c2bef32cc4b385ef96[m
+Author: Vafin Artem <a.vafin85@gmail.com>
+Date:   Thu Jul 30 14:53:52 2020 +0500
+
+    Стилизовал блок Example и Slider на tablet версии по PP
+
+[33mcommit 15b0ccc63b01a3bdc7bd4599796a6e41c8d226ac[m
+Author: Vafin Artem <a.vafin85@gmail.com>
+Date:   Thu Jul 30 12:44:51 2020 +0500
+
+    Добавил гугл карты на главную и переписал скрипт map.js в связи с этим
+
+[33mcommit 656a173b021fc7aaaec8a22e8c77e3d01835f868[m[33m ([m[1;31mmygit/master[m[33m, [m[1;31macademy/master[m[33m, [m[1;32mmaster[m[33m)[m
+Merge: 5378585 32c9eac
+Author: Keks <keksobot@users.noreply.github.com>
+Date:   Wed Jul 29 19:21:05 2020 +0300
+
+    Merge pull request #9 from VafinArtem/module5-task1
+
+[33mcommit 32c9eac147409bccc5d875154422da006124db2d[m[33m ([m[1;31mmygit/module5-task1[m[33m, [m[1;32mmodule5-task1[m[33m)[m
+Author: Vafin Artem <a.vafin85@gmail.com>
+Date:   Wed Jul 29 18:01:26 2020 +0500
+
+    Настроил работу мобильного меню при отключенном JS
+
+[33mcommit 831ad925bf8b791b5d742f4c028aedee77513aca[m
+Author: Vafin Artem <a.vafin85@gmail.com>
+Date:   Wed Jul 29 17:51:00 2020 +0500
+
+    Стилизовал активное состояние и фокуса ссылок в блоке copyright
+
+[33mcommit 1dcb8a2257a0d316b7ac09649b868b44ca41883b[m
+Author: Vafin Artem <a.vafin85@gmail.com>
+Date:   Wed Jul 29 17:43:57 2020 +0500
+
+    Стилизовал активное состояние и фокуса ссылок в блоке Social
+
+[33mcommit 29cda4586d3f32864cc7246ea0eac5864a4d59fb[m
+Author: Vafin Artem <a.vafin85@gmail.com>
+Date:   Wed Jul 29 17:36:33 2020 +0500
+
+    Стилизовал активное состояние и фокуса ссылок в блоке Pagination
+
+[33mcommit 6eccdc93c41542fa029adbdd6d63af0bf61a5f1e[m
+Author: Vafin Artem <a.vafin85@gmail.com>
+Date:   Wed Jul 29 17:25:43 2020 +0500
+
+    Стилизовал активное состояние и фокуса ссылок в блоке Main-nav
+
+[33mcommit c9c4412dc3c80b8379a26cc03c6f92921fd1bbd6[m
+Author: Vafin Artem <a.vafin85@gmail.com>
+Date:   Wed Jul 29 16:55:31 2020 +0500
+
+    Стилизовал активное состояние и фокуса Button и ссылок в блоке Programms
+
+[33mcommit fa4b5b84099e187788aa86843060a90838f58065[m
+Author: Vafin Artem <a.vafin85@gmail.com>
+Date:   Wed Jul 29 16:30:35 2020 +0500
+
+    Стилизовал активное состояние и фокуса Logo
+
+[33mcommit 533a1355ca74babb0655b1e7f5fb5cebb8e5ba7e[m
+Author: Vafin Artem <a.vafin85@gmail.com>
+Date:   Wed Jul 29 13:54:47 2020 +0500
+
+    Стилизовал блок catalog, pagination для desktop версии по PP
+
+[33mcommit f4adcd032b5d2c5b5a2dbefd8c609bb042bfc1e3[m
+Author: Vafin Artem <a.vafin85@gmail.com>
+Date:   Wed Jul 29 13:44:59 2020 +0500
+
+    Стилизовал блок works для mobile версии по PP
+
+[33mcommit e84f3cbf0858326fa2007d2df625ad0cde5f0d6d[m
+Author: Vafin Artem <a.vafin85@gmail.com>
+Date:   Wed Jul 29 13:20:53 2020 +0500
+
+    Стилизовал блок programms для works версии по PP
+
+[33mcommit 8a71ff8a68deecb6d02f90e3cb20c5033e595be8[m
+Author: Vafin Artem <a.vafin85@gmail.com>
+Date:   Wed Jul 29 13:16:46 2020 +0500
+
+    Стилизовал блок programms для desktop версии по PP
+
+[33mcommit d3364c784bf16d56dd6c931a2248c5010d9392e2[m
+Author: Vafin Artem <a.vafin85@gmail.com>
+Date:   Wed Jul 29 12:45:17 2020 +0500
+
+    Стилизовал блок promo для desktop версии по PP
+
+[33mcommit 62634376245649d7d379f6fd814597e3c3f76cd1[m
+Author: Vafin Artem <a.vafin85@gmail.com>
+Date:   Wed Jul 29 12:22:10 2020 +0500
+
+    Стилизовал блок main-nav для desktop версии по PP
+
+[33mcommit 0f12b52e94965305d4f85a9071a645bb5eef6e15[m
+Author: Vafin Artem <a.vafin85@gmail.com>
+Date:   Wed Jul 29 12:16:00 2020 +0500
+
+    Стилизовал блок Catalog и Pagination по PP
+
+[33mcommit 451ddb0cb8b84845d224958ea772a6f28ce33639[m
+Author: Vafin Artem <a.vafin85@gmail.com>
+Date:   Wed Jul 29 11:33:42 2020 +0500
+
+    Стилизовал блок Catalog по PP
+
+[33mcommit 25e5bce0f2ffc2d3507b9a2ba4d3bee2759029a0[m
+Author: Vafin Artem <a.vafin85@gmail.com>
+Date:   Tue Jul 28 16:36:50 2020 +0500
+
+    Начал стилизацию блока catalog по PP
+
+[33mcommit acc0673034f001de75af37d9c8fa0a785c541a30[m
+Author: Vafin Artem <a.vafin85@gmail.com>
+Date:   Tue Jul 28 15:42:29 2020 +0500
+
+    Стилизовал блок works на главной по PP Добавил нижний бордер у блока
+
+[33mcommit 38071a321525681efbaacdf6f9eac467566eb1e5[m
+Author: Vafin Artem <a.vafin85@gmail.com>
+Date:   Tue Jul 28 15:37:56 2020 +0500
+
+    Стилизовал блок works на главной по PP
+
+[33mcommit 197ff1868a59d89d0386e5fdc0497dd9af120534[m
+Author: Vafin Artem <a.vafin85@gmail.com>
+Date:   Tue Jul 28 15:35:21 2020 +0500
+
+    Стилизовал блок works на главной по PP
+
+[33mcommit 2a5fcce13d36351e420c309d8f07b201af5542b4[m
+Author: Vafin Artem <a.vafin85@gmail.com>
+Date:   Tue Jul 28 15:14:40 2020 +0500
+
+    Стилизовал блок programms на главной по PP
+
+[33mcommit f2ddc62372b0e432eabd7bdee424a3cfbf914313[m
+Author: Vafin Artem <a.vafin85@gmail.com>
+Date:   Tue Jul 28 14:45:05 2020 +0500
+
+    Стилизовал блок promo на главной по PP
+
+[33mcommit 0a0c0b8ffe4cd1a2a708e68cf231e991b1eb692b[m
+Author: Vafin Artem <a.vafin85@gmail.com>
+Date:   Tue Jul 28 14:36:52 2020 +0500
+
+    Добавил карту на страницу каталога. Стилизовал блок main-nav на главной по PP
+
+[33mcommit 214086a9a63859122c231c2a9d396274e311c08f[m
+Author: Vafin Artem <a.vafin85@gmail.com>
+Date:   Tue Jul 28 00:37:38 2020 +0500
+
+    Правка блока Page-header главной страницы
+
+[33mcommit 3155f545e8b62f3621a33640ee99a2ec201f465d[m
+Author: Vafin Artem <a.vafin85@gmail.com>
+Date:   Mon Jul 27 19:44:03 2020 +0500
+
+    Правка шапки на главной
+
+[33mcommit 08b4977151db23b78299d56c81e1ad991380fba6[m
+Author: Vafin Artem <a.vafin85@gmail.com>
+Date:   Mon Jul 27 19:38:12 2020 +0500
+
+    Отредактировал блок gift mobile по PP
+
+[33mcommit 3daa82ff99f47cd7708a2d085224a781974b274a[m
+Author: Vafin Artem <a.vafin85@gmail.com>
+Date:   Mon Jul 27 19:29:54 2020 +0500
+
+    Отредактировал блок Additional mobile по PP
+
+[33mcommit e7ba378d9570914653917197e8d15597071eecf3[m
+Author: Vafin Artem <a.vafin85@gmail.com>
+Date:   Mon Jul 27 19:02:06 2020 +0500
+
+    Отредактировал блок Pagination mobile по PP
+
+[33mcommit f0942a358e9a92edd15e8b0cbc0c10120dd70840[m
+Author: Vafin Artem <a.vafin85@gmail.com>
+Date:   Mon Jul 27 18:55:44 2020 +0500
+
+    Отредактировал блок Catalog mobile по PP
+
+[33mcommit 23a34138b9822a63fef27863e0b807870ed4df7a[m
+Author: Vafin Artem <a.vafin85@gmail.com>
+Date:   Mon Jul 27 17:12:16 2020 +0500
+
+    Отредактировал подвал по PP
+
+[33mcommit e7004cb9719238c0207ec3faa724854ad566e326[m
+Author: Vafin Artem <a.vafin85@gmail.com>
+Date:   Mon Jul 27 17:04:39 2020 +0500
+
+    Отредактировал блок Location mobile по PP
+
+[33mcommit f843c99ccea158202269220fa28b85ff2ada7e33[m
+Author: Vafin Artem <a.vafin85@gmail.com>
+Date:   Mon Jul 27 16:55:16 2020 +0500
+
+    Отредактировал блок Example и Slider mobile по PP
+
+[33mcommit db8125ed0034e0cd79ee180e76a8ba016d6f5d4e[m
+Author: Vafin Artem <a.vafin85@gmail.com>
+Date:   Mon Jul 27 16:37:01 2020 +0500
+
+    Отредактировал блок Works mobile по PP
+
+[33mcommit 3e80e6714cfc1a67be577caf6514362c6397aff8[m
+Author: Vafin Artem <a.vafin85@gmail.com>
+Date:   Mon Jul 27 16:35:52 2020 +0500
+
+    Отредактировал блок Works mobile по PP
+
+[33mcommit b363f9b7c1ed1049e4492b06f44ef17704d7070d[m
+Author: Vafin Artem <a.vafin85@gmail.com>
+Date:   Mon Jul 27 16:34:08 2020 +0500
+
+    Отредактировал блок Programms mobile по PP
+
+[33mcommit 9088b5bef93a00ace21b18e95592f136c07dc244[m
+Author: Vafin Artem <a.vafin85@gmail.com>
+Date:   Mon Jul 27 16:08:55 2020 +0500
+
+    Отредактировал шапку mobile по PP
+
+[33mcommit ff0abc7253c5bc89f40bd5d204e3184fb232eb2b[m
+Author: Vafin Artem <a.vafin85@gmail.com>
+Date:   Mon Jul 27 14:44:34 2020 +0500
+
+    Добавил бэкграунд шапке и стилизовал пункты меню на десктоп версии
+
+[33mcommit 868e71ba224e5ae49ce3d5fcda79f0cd8eae03fa[m
+Author: Vafin Artem <a.vafin85@gmail.com>
+Date:   Mon Jul 27 13:42:19 2020 +0500
+
+    подключил скрипты на картк и открытие закрытие меню
+
+[33mcommit 537858593f50b5cd0c5aeaa87e4de4d4fdfb6481[m
+Merge: 108761d 7a20e31
+Author: Keks <keksobot@users.noreply.github.com>
+Date:   Sun Jul 26 16:14:19 2020 +0300
+
+    Merge pull request #8 from VafinArtem/module4-task2
+
+[33mcommit 7a20e3182c03875d45e616c7eea05de78ae4b3f9[m[33m ([m[1;31mmygit/module4-task2[m[33m, [m[1;32mmodule4-task2[m[33m)[m
+Author: Vafin Artem <a.vafin85@gmail.com>
+Date:   Sun Jul 26 13:57:20 2020 +0500
+
+    правки после npm test
+
+[33mcommit e6ef26b7acc3e79d3c297b2622e9a2b5516bed0d[m
+Author: Vafin Artem <a.vafin85@gmail.com>
+Date:   Sun Jul 26 13:44:00 2020 +0500
+
+    небольшие правки кода
+
+[33mcommit 0120f4bc4fb9956d5fdb0b4adb344fac3754fa9a[m
+Author: Vafin Artem <a.vafin85@gmail.com>
+Date:   Sun Jul 26 13:36:52 2020 +0500
+
+    небольшие правки кода
+
+[33mcommit 4875b8f38843799f155bce76635a5fc0bc87eb07[m
+Author: Vafin Artem <a.vafin85@gmail.com>
+Date:   Sun Jul 26 13:26:33 2020 +0500
+
+    стилизовал блок additional и gift desktop версии
+
+[33mcommit 3f02a947372076a47c13d474a17e4efd5f08838e[m
+Author: Vafin Artem <a.vafin85@gmail.com>
+Date:   Sun Jul 26 12:47:35 2020 +0500
+
+    стилизовал блок Catalog tablet и desktop версии
+
+[33mcommit 85bb14962d738203b33f2480a18d7c9600065e92[m
+Author: Vafin Artem <a.vafin85@gmail.com>
+Date:   Sun Jul 26 11:40:46 2020 +0500
+
+    стилизовал блок Promo desktop версии
+
+[33mcommit 3a4729665fe4edff9e8f55cf13c62b5582f3f07f[m
+Author: Vafin Artem <a.vafin85@gmail.com>
+Date:   Sun Jul 26 11:35:57 2020 +0500
+
+    стилизовал блок Location desktop версии
+
+[33mcommit e1d0965fc1b8d35bd372fe64b3b0f7ef835f7779[m
+Author: Vafin Artem <a.vafin85@gmail.com>
+Date:   Sun Jul 26 11:33:36 2020 +0500
+
+    стилизовал блок Example desktop версии
+
+[33mcommit 2fadaf1639829993dec10cfc116181b7ed37b43b[m
+Author: Vafin Artem <a.vafin85@gmail.com>
+Date:   Sun Jul 26 11:26:09 2020 +0500
+
+    стилизовал блок Example и Location планшетной версии
+
+[33mcommit 9a49925ba8b82ab3af62fa8af73a9cce13de2aa2[m
+Author: Vafin Artem <a.vafin85@gmail.com>
+Date:   Sun Jul 26 00:48:55 2020 +0500
+
+    Сделал адаптивную верстку подвала на всех страницах
+
+[33mcommit efcf962161422dce7d7a1897936c36b724f1417d[m
+Author: Vafin Artem <a.vafin85@gmail.com>
+Date:   Sun Jul 26 00:33:53 2020 +0500
+
+    Сделал адаптивную верстку страницы Формы
+
+[33mcommit bde8c7d3e5cedf1414bbbf5e950b90235fe33e53[m
+Author: Vafin Artem <a.vafin85@gmail.com>
+Date:   Sat Jul 25 15:55:38 2020 +0500
+
+    Сверстал адаптивную сетку блока Additional и Gift

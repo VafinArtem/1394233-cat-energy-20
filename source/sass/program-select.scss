@@ -5,6 +5,10 @@
   @media (min-width:$tablet-width) {
     padding-top: 59px;
   }
+
+  @media (min-width:$desktop-width) {
+    padding-top: 73px;
+  }
 }
 
 .program-select__title {
@@ -31,6 +35,10 @@
     margin-top: 55px;
     font-size: 20px;
     line-height: 30px;
+  }
+
+  @media (min-width:$desktop-width) {
+    padding: 0;
   }
 }
 
