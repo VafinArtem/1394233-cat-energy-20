@@ -45,18 +45,6 @@
   font-size: 24px;
   line-height: 24px;
 
-  // &::after {
-  //   position: absolute;
-  //   content: "";
-  //   top: 50%;
-  //   left: 100%;
-  //   width: 53px;
-  //   height: 2px;
-  //   margin-top: 3px;
-  //   margin-left: -53px;
-  //   background-color: $basic-green;
-  // }
-
   @media (min-width: $tablet-width) {
     width: 411px;
     padding: 0;
@@ -66,28 +54,6 @@
     font-size: 36px;
     line-height: 36px;
     background-color: $basic-white;
-
-    // &::after {
-    //   position: absolute;
-    //   content: "";
-    //   top: 23px;
-    //   left: 0px;
-    //   width: 46vw;
-    //   max-width: 100vw;
-    //   height: 2px;
-    //   background-color: $basic-green;
-    // }
-
-    // &::before {
-    //   position: absolute;
-    //   content: "";
-    //   top: 23px;
-    //   right: 100%;
-    //   width: 46vw;
-    //   max-width: 100vw;
-    //   height: 2px;
-    //   background-color: $basic-green;
-    // }
   }
 
   @media (min-width: $desktop-width) {
@@ -155,7 +121,7 @@
     }
 
     &:last-child {
-      border-bottom: 1px solid $special-grey-mid;;
+      border-bottom: 1px solid $special-grey-mid;
     }
   }
 }
