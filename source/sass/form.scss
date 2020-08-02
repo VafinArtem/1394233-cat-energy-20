@@ -4,65 +4,283 @@
   justify-content: start;
 }
 
+.form__wrapper {
+  width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1300px;
+    padding: 0 40px;
+  }
+}
+
 .form__inner {
   display: flex;
   flex-direction: column;
-  padding: 0 20px;
+
+  &--btn {
+    padding: 0 20px;
+  }
 
   @media (min-width: $tablet-width) {
-    display: flex;
+    margin-bottom: 75px;
+
+    &--btn {
+      flex-direction: row;
+      padding: 0 71px;
+      margin-bottom: 40px;
+    }
+
+    &--contact {
+      justify-content: flex-start;
+      width: 100%;
+      margin-bottom: 0;
+    }
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 0;
+
+    &--contact {
+      justify-content: flex-start;
+      width: 100%;
+    }
+
+    &--btn {
+      justify-content: flex-start;
+    }
   }
 }
 
 .form__block {
+  position: relative;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  margin-bottom: 26px;
+  margin-bottom: 23px;
   border: none;
 
-  &:nth-child(2) {
-    padding-top: 20px;
-    padding-bottom: 7px;
+  &::before {
+    position: absolute;
+    content: "";
+    top: 16px;
+    width: 100%;
+    height: 2px;
+    background-color: $basic-green;
+  }
+
+  &--about {
+    &::before {
+      display: none;
+    }
+  }
+
+  &--programm {
+    padding-top: 26px;
+    padding-bottom: 26px;
+    margin-bottom: 26px;
     border-bottom: 1px solid $special-light-grey;
     border-top: 1px solid $special-light-grey;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  &--contact {
+    margin-bottom: 27px;
   }
 
   &--comment {
-    padding: 0 20px;
+    margin-bottom: 29px;
+  }
+
+  &--add {
+    margin-bottom: 38px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 70px;
+
+    &::before {
+      top: 24px;
+    }
+
+    &--programm {
+      padding-left: 28px;
+      padding-top: 29px;
+      padding-bottom: 19px;
+      margin: 0 40px;
+      border: 1px solid $special-light-grey;
+    }
+
+    &--contact {
+      margin-bottom: 65px;
+    }
+
+    &--comment {
+      padding: 0;
+      margin-bottom: 65px;
+    }
+
+    &--add {
+      margin-bottom: 36px;
+    }
   }
 
   @media (min-width: $desktop-width) {
+    &::before {
+      top: 21px;
+    }
+
     &--about {
       width: 569px;
     }
 
     &--programm {
       width: 569px;
+      margin: 0;
+      margin-bottom: 70px;
+    }
+
+    &--comment {
+      margin-bottom: 68px;
+    }
+
+    &--add {
+      margin-bottom: 43px;
     }
   }
 }
 
 .form__name {
+  position: relative;
   display: flex;
   align-items: center;
   padding: 0 20px;
-  margin-bottom: 13px;
+
+  svg {
+    position: absolute;
+    right: 35px;
+  }
+
+  &--about {
+    &:not(:last-child) {
+      margin-bottom: 14px;
+    }
+  }
+
+  &--contact {
+    &:not(:last-child) {
+      margin-bottom: 14px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-right: 36px;
+    padding-left: 41px;
+
+    svg {
+      right: 55px;
+    }
+
+    &--about {
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+
+    &--contact {
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+
+    &--radio {
+      padding: 0;
+    }
+
+    &--add {
+      padding: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-grow: 1;
+
+    svg {
+      right: 20px;
+    }
+
+    &--about {
+      padding: 0;
+    }
+
+    &--contact {
+      min-width: 570px;
+      padding: 0;
+
+      &:not(:last-child) {
+        margin-bottom: 0;
+        margin-right: 80px;
+      }
+    }
+  }
 }
 
 .form__description {
   display: block;
-  margin-right: 9px;
+  margin-right: 10px;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   color: $special-dark-grey;
+
+  &--about {
+    margin-right: 14px;
+  }
+
+  &--radio,
+  &--check {
+    margin-right: 0;
+    margin-left: 45px;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    margin-right: 16px;
+
+    &--about {
+      margin-right: 19px;
+    }
+
+    &--radio,
+    &--check {
+      margin-left: 59px;
+      margin-right: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--check {
+      margin: 0;
+    }
+
+    &--radio,
+    &--check {
+      margin-left: 57px;
+    }
+  }
 }
 
 .form__input {
@@ -75,48 +293,117 @@
   text-transform: uppercase;
   color: $special-dark-grey;
   border: 1px solid #e7e7e7;
+  outline: none;
+
+  &:hover {
+    border: 1px solid $special-grey-mid;
+  }
+
+  &:focus {
+    padding-left: 13px;
+    border: 2px solid $special-dark-grey;
+  }
+
+  &:invalid {
+    padding-left: 13px;
+    border: 2px solid $special-red;
+  }
 
   &--comment {
     width: 280px;
     height: 150px;
+    margin: 0 20px;
     padding-top: 13px;
+  }
+
+  &--contact {
+    &:focus {
+      & + svg path {
+        fill: $basic-green;
+      }
+    }
+
+    &:invalid {
+      & + svg path {
+        fill: $basic-green;
+      }
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    height: 52px;
+    font-size: 20px;
+    line-height: 30px;
+
+    &--contact {
+      padding-left: 20px;
+
+      &:focus {
+        padding-left: 19px;
+      }
+
+      &:invalid {
+        padding-left: 19px;
+      }
+    }
+
+    &--comment {
+      width: 631px;
+      height: 174px;
+      margin: 0 40px;
+      padding: 10px 18px;
+
+      &:focus {
+        padding: 9px 17px;
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--comment {
+      width: 100%;
+      margin: 0;
+    }
   }
 }
 
 .form__title {
   position: relative;
   padding: 0 20px;
-  margin-bottom: 34px;
+  margin-bottom: 32px;
   font-size: 24px;
-  line-height: 24px;
-
-  &::after {
-    position: absolute;
-    content: "";
-    top: 50%;
-    left: 100%;
-    height: 2px;
-    background-color: $basic-green;
-  }
+  line-height: 26px;
+  background-color: $basic-white;
 
   &--comment {
-    padding: 0;
+    padding: 0 20px;
   }
 
-  &--contakt::after {
-    width: 99px;
-    margin-top: -10px;
-    margin-left: -99px;
+  &--contact {
+    width: 221px;
   }
 
-  &--comment::after {
-    width: 158px;
-    margin-left: 22px;
+  &--add {
+    margin-bottom: 40px;
   }
 
-  &--add::after {
-    width: 136px;
-    margin-left: 4px;
+  @media (min-width: $tablet-width) {
+    padding: 0 40px;
+    margin-bottom: 76px;
+    font-size: 36px;
+    line-height: 36px;
+
+    &--add {
+      margin-bottom: 62px;
+    }
+
+    &--contact {
+      width: auto;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    left: -40px;
   }
 }
 
@@ -132,28 +419,46 @@
     &--add {
       flex-direction: row;
       flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 0 40px;
     }
   }
 
   @media (min-width: $desktop-width) {
     &--add {
-      flex-direction: row;
-      justify-content: space-between;
-      flex-wrap: wrap;
+      padding: 0;
     }
   }
 }
 
 .form__item {
+  &:not(:last-child) {
+    margin-bottom: 25px;
+  }
+
   @media (min-width: $tablet-width) {
+    margin-bottom: 10px;
+
+    &:not(:last-child) {
+      margin-bottom: 23px;
+    }
+
     &--add {
-      width: 323px;
+      width: 284px;
+
+      &:first-child {
+        margin-bottom: 42px;
+      }
     }
   }
 
   @media (min-width: $desktop-width) {
     &--add {
-      width: auto;
+      width: 245px;
+
+      &:first-child {
+        margin-bottom: 0;
+      }
     }
   }
 }
@@ -161,5 +466,154 @@
 .form__text {
   margin: 0;
   margin-top: 21px;
+  font-family: $second-font;
+  font-size: 14px;
+  line-height: 16px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    flex-grow: 1;
+    margin-top: 17px;
+    margin-right: 42px;
+    font-size: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-grow: 0;
+    margin-right: 0;
+  }
+}
+
+.form__radio {
+  appearance: none;
+
+  &:hover,
+  &:focus {
+    & + .form__box--radio {
+      border: 1px solid $special-grey-adv-light;
+    }
+  }
+
+  &:disabled {
+    & + .form__box--radio,
+    & ~ .form__description--radio {
+      opacity: 0.3;
+    }
+  }
+
+  &:checked {
+    & + .form__box--radio {
+      background-color: $basic-green;
+      box-shadow: inset 0 0 0 8px $basic-white;
+
+      @media (min-width: $tablet-width) {
+        box-shadow: inset 0 0 0 11px $basic-white;
+      }
+    }
+
+    &:hover,
+    &:focus {
+      & + .form__box--radio {
+        border: 1px solid $special-grey-adv-light;
+      }
+    }
+
+    &:disabled {
+      & + .form__box--radio,
+      & ~ .form__description--radio {
+        opacity: 0.3;
+      }
+    }
+  }
+}
+
+.form__check {
+  appearance: none;
+
+  &:checked {
+    & + .form__box--check {
+      &::after,
+      &::before {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        content: "";
+        height: 2px;
+        background-color: $basic-green;
+      }
+
+      &::after {
+        width: 17px;
+        margin-top: -1px;
+        margin-left: -5px;
+        transform: rotate(-48deg);
+      }
+
+      &::before {
+        width: 10px;
+        margin-top: 1px;
+        margin-left: -10px;
+        transform: rotate(46deg);
+      }
+    }
+  }
+
+  &:hover,
+  &:focus {
+    & + .form__box--check {
+      border: 1px solid $special-grey-adv-light;
+    }
+  }
+
+  &:disabled {
+    & + .form__box--check {
+      opacity: 0.3;
+
+      &::after,
+      &::before {
+        background-color: opacify($basic-green, 1);
+      }
+    }
+
+    & ~ .form__description--check {
+      opacity: 0.3;
+    }
+  }
+}
+
+.form__box {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: 1px solid $special-grey-mid;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
+
+  &--radio {
+    content: "";
+    border-radius: 50%;
+  }
+
+  &--check {
+    content: "";
+  }
+}
+
+.form__button {
+  font-size: 16px;
+  line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 282px;
+    min-height: 52px;
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 568px;
+    margin-right: 83px;
+  }
 }

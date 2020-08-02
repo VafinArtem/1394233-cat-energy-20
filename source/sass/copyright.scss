@@ -5,6 +5,7 @@
   min-height: 78px;
 
   @media (min-width: $tablet-width) {
+    width: 163px;
     padding: 0;
   }
 }
@@ -21,7 +22,12 @@
   }
 }
 
-.copyright__img{
+.copyright__img {
+  path {
+    width: 27px;
+    height: 34px;
+  }
+
   &:hover,
   &:focus {
     path {
