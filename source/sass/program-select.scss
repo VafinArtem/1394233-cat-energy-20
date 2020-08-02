@@ -2,12 +2,12 @@
   padding-top: 5px;
   margin-bottom: 32px;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     padding-top: 59px;
     margin-bottom: 32px;
   }
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     padding-top: 73px;
     margin-bottom: 82px;
   }
@@ -31,7 +31,7 @@
 .program-select__title {
   padding: 0 20px;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     padding: 0;
   }
 }
@@ -45,7 +45,7 @@
   line-height: 18px;
   text-transform: uppercase;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     width: 363px;
     padding: 0;
     padding-left: 40px;
@@ -54,7 +54,7 @@
     line-height: 30px;
   }
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     padding: 0;
   }
 }
@@ -62,11 +62,11 @@
 .program-select__form {
   margin-top: 39px;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     margin-top: 65px;
   }
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     margin-top: 67px;
   }
 }

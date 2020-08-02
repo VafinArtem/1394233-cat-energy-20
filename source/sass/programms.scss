@@ -103,7 +103,7 @@
   &--slim {
     &::before {
       position: absolute;
-      top: 0px;
+      top: 0;
       right: 100%;
       z-index: 10;
       content: "";
@@ -225,7 +225,7 @@
 
   &:hover,
   &:focus {
-    &:after {
+    &::after {
       width: 32px;
       height: 12px;
       background-image: url("../img/icon-right-arrow-verylong.svg");

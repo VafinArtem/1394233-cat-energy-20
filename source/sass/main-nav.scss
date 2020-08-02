@@ -117,6 +117,7 @@
 
     &--index-active {
       position: relative;
+
       @media (min-width: $tablet-width) {
         &::before {
           position: absolute;
@@ -136,6 +137,7 @@
 
     &--active {
       position: relative;
+
       @media (min-width: $tablet-width) {
         &::before {
           position: absolute;
