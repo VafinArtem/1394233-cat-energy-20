@@ -169,6 +169,11 @@
   align-items: center;
   padding: 0 20px;
 
+  svg {
+    position: absolute;
+    right: 35px;
+  }
+
   &--about {
     &:not(:last-child) {
       margin-bottom: 14px;
@@ -184,6 +189,10 @@
   @media (min-width: $tablet-width) {
     padding-right: 36px;
     padding-left: 41px;
+
+    svg {
+      right: 55px;
+    }
 
     &--about {
       &:not(:last-child) {
@@ -208,6 +217,10 @@
 
   @media (min-width: $desktop-width) {
     flex-grow: 1;
+
+    svg {
+      right: 20px;
+    }
 
     &--about {
       padding: 0;
@@ -306,6 +319,19 @@
     padding-top: 13px;
   }
 
+  &--contact {
+    &:focus {
+      &+svg path {
+        fill: $basic-green;
+      }
+    }
+
+    &:invalid {
+      &+svg path {
+        fill: $basic-green;
+      }
+    }
+  }
 
   @media (min-width:$tablet-width) {
     height: 52px;
