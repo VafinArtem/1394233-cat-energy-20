@@ -22,6 +22,7 @@
   margin: 0;
   margin-top: 40px;
   padding: 0;
+  counter-reset: section;
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -55,40 +56,43 @@
 
     &::after {
       position: absolute;
+      counter-increment: section;
+      content: counters(section,".") " ";
       bottom: 100%;
+      left: 115px;
       z-index: -1;
       margin-bottom: -260px;
       font-size: 280px;
       color: $basic-grey;
     }
 
-    &--one {
-      &::after {
-        content: "1";
-        left: 118px;
-      }
-    }
+    // &--one {
+    //   &::after {
+    //     content: "1";
+    //     left: 118px;
+    //   }
+    // }
 
-    &--two {
-      &::after {
-        content: "2";
-        left: 110px;
-      }
-    }
+    // &--two {
+    //   &::after {
+    //     content: "2";
+    //     left: 110px;
+    //   }
+    // }
 
-    &--three {
-      &::after {
-        content: "3";
-        left: 113px;
-      }
-    }
+    // &--three {
+    //   &::after {
+    //     content: "3";
+    //     left: 113px;
+    //   }
+    // }
 
-    &--four {
-      &::after {
-        content: "4";
-        left: 113px;
-      }
-    }
+    // &--four {
+    //   &::after {
+    //     content: "4";
+    //     left: 113px;
+    //   }
+    // }
   }
 }
 
