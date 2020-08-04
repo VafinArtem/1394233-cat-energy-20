@@ -9,6 +9,11 @@
   background-position: top center;
   padding-top: 25px;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
+
   @media (min-width: $tablet-width) {
     padding-top: 53px;
     background: none;
