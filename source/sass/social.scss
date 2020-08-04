@@ -16,35 +16,37 @@
 .social__list {
   display: flex;
   justify-content: start;
+  align-items: center;
   width: 130px;
+  height: 33px;
   list-style: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 6px;
+  }
 }
 
 .social__item {
   display: flex;
   justify-content: center;
+  align-items: center;
 
-  &:nth-child(2) {
-    margin-left: 34px;
-    margin-right: 41px;
+  &:not(:last-child) {
+    margin-right: 36px;
   }
 
   @media (min-width: $tablet-width) {
     &:not(:last-child) {
       padding-top: 3px;
-    }
-
-    &:nth-child(2) {
-      margin-left: 29px;
       margin-right: 29px;
     }
   }
 }
 
 .social__link {
-  display: block;
+  // display: block;
 
   &:hover,
   &:focus {

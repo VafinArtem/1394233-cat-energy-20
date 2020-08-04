@@ -16,6 +16,10 @@
   padding: 0;
   list-style: none;
 
+  @media (min-width: $tablet-width) {
+    margin-top: 3px;
+  }
+
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
@@ -42,7 +46,7 @@
     justify-content: start;
     min-height: 372px;
     padding-left: 52px;
-    padding-top: 68px;
+    padding-top: 71px;
   }
 
   @media (min-width: $desktop-width) {
@@ -89,7 +93,7 @@
 
   @media (min-width: $tablet-width) {
     padding-left: 0;
-    padding-top: 9px;
+    padding-top: 6px;
     margin-bottom: 37px;
     font-size: 36px;
     line-height: 36px;

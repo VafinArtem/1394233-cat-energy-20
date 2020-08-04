@@ -24,7 +24,7 @@
   justify-content: center;
 
   &--check {
-    padding-top: 12px;
+    padding-top: 15px;
 
     @media (min-width: $tablet-width) {
       display: none;
@@ -32,7 +32,7 @@
   }
 
   &--range {
-    padding-top: 7px;
+    padding-top: 11px;
 
     @media (max-width: $mobile-width-only) {
       display: none;
@@ -109,8 +109,8 @@
   &::before,
   &::after {
     position: absolute;
-    top: -13px;
-    padding-bottom: 1px;
+    top: -10px;
+    padding-bottom: 4px;
     font-family: "Oswald", "Arial", sans-serif;
     font-size: 20px;
     text-transform: uppercase;
