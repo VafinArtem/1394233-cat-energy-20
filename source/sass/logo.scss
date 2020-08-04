@@ -19,6 +19,11 @@
       width: 174px;
       height: 51.68px;
     }
+
+    @media (min-width: $desktop-width) {
+      width: 202px;
+      height: 59px;
+    }
   }
 
   &--footer {
