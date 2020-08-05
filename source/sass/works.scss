@@ -65,7 +65,7 @@
     &::after {
       position: absolute;
       counter-increment: section;
-      content: counters(section,".") " ";
+      content: counters(section, ".") " ";
       bottom: 100%;
       left: 115px;
       z-index: -1;
