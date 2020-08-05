@@ -54,7 +54,7 @@
 }
 
 .example__text {
-  width: 279px;
+  // width: 279px;
   margin: 0;
   font-family: $second-font;
   font-size: 14px;
@@ -127,12 +127,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 124px;
   height: 56px;
   margin-bottom: 34px;
   padding-bottom: 3px;
   border: 1px solid $special-grey-mid;
   border-radius: 3px;
+
+
+
+  @media (max-width: $mobile-width-only) {
+    width: 50%;
+    flex-grow: 1;
+
+    &:not(:last-child) {
+      margin-right: 9.03%;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     width: 162px;
