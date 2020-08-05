@@ -4,13 +4,15 @@
   justify-content: space-between;
   align-items: center;
   min-height: 480px;
-  background-image: url("../img/index-background-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: top center;
+  background: url("../img/index-background-mobile@1x.jpg") top center no-repeat, linear-gradient(to bottom, $special-green 0%, $special-green 63.5%, $basic-white 63.5%, $basic-white 100%);
+  // background-image: url("../img/index-background-mobile@1x.jpg");
+  // background-repeat: no-repeat;
+  // background-position: top center;
   padding-top: 25px;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/index-background-mobile@2x.jpg");
+    background: url("../img/index-background-mobile@2x.jpg") top center no-repeat, linear-gradient(to bottom, $special-green 0%, $special-green 63.5%, $basic-white 63.5%, $basic-white 100%);
+    // background: url("../img/index-background-mobile@2x.jpg");
     background-size: 320px auto;
   }
 
@@ -70,16 +72,20 @@
 .promo__title {
   color: $basic-white;
   text-align: center;
-  width: 249px;
+  min-width: 249px;
+  max-width: 410px;
+  padding: 0 20px;
   margin-bottom: 25px;
   margin-top: 2px;
 
   @media (min-width: $tablet-width) {
+    width: 414px;
+    max-width: none;
+    padding: 0;
     margin-bottom: 0;
     font-size: 60px;
     line-height: 60px;
     color: inherit;
-    width: 414px;
     text-align: left;
   }
 }
