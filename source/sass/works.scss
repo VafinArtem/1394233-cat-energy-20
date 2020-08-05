@@ -3,6 +3,11 @@
   padding-top: 29px;
   padding-bottom: 22px;
 
+  @media (max-width: $mobile-width-only) {
+    display: flex;
+    flex-direction: column;
+  }
+
   @media (min-width: $tablet-width) {
     padding: 0 30px;
     padding-top: 46px;
@@ -18,11 +23,14 @@
 }
 
 .works__list {
-  list-style: none;
-  margin: 0;
-  margin-top: 40px;
   padding: 0;
+  list-style: none;
   counter-reset: section;
+
+  @media (max-width: $mobile-width-only) {
+    margin: 0 auto;
+    margin-top: 40px;
+  }
 
   @media (min-width: $tablet-width) {
     display: grid;
