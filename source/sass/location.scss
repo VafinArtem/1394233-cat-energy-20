@@ -15,12 +15,13 @@
 .location__inner {
   display: flex;
   justify-content: space-between;
+  width: 100%;
   padding: 0 20px;
   margin-top: 28px;
   padding-bottom: 26px;
 
   @media (min-width: $tablet-width) {
-    width: 100%;
+    width: 768px;
     padding: 0 72px;
     margin-top: 64px;
     margin-bottom: 57px;

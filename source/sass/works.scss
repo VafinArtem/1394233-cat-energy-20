@@ -3,6 +3,11 @@
   padding-top: 29px;
   padding-bottom: 22px;
 
+  @media (max-width: $mobile-width-only) {
+    display: flex;
+    flex-direction: column;
+  }
+
   @media (min-width: $tablet-width) {
     padding: 0 30px;
     padding-top: 46px;
@@ -18,11 +23,14 @@
 }
 
 .works__list {
-  list-style: none;
-  margin: 0;
-  margin-top: 40px;
   padding: 0;
+  list-style: none;
   counter-reset: section;
+
+  @media (max-width: $mobile-width-only) {
+    margin: 0 auto;
+    margin-top: 40px;
+  }
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -57,7 +65,7 @@
     &::after {
       position: absolute;
       counter-increment: section;
-      content: counters(section,".") " ";
+      content: counters(section, ".") " ";
       bottom: 100%;
       left: 115px;
       z-index: -1;
@@ -120,6 +128,7 @@
 }
 
 .works__description {
+  flex-grow: 1;
   margin: 0;
   margin-left: 20px;
   font-family: $second-font;
