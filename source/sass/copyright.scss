@@ -22,21 +22,25 @@
   }
 }
 
+.copyright__icon {
+  fill: #666666;
+}
+
 .copyright__img {
-  path {
+  .copyright__icon {
     width: 27px;
     height: 34px;
   }
 
   &:hover,
   &:focus {
-    path {
+    .copyright__icon {
       fill: $special-green;
     }
   }
 
   &:active {
-    path {
+    .copyright__icon {
       fill: transparentize($special-green, 0.3);
     }
   }

@@ -52,13 +52,15 @@
   background-color: $basic-grey;
   color: $special-dark-grey;
 
-  &:hover,
-  &:focus {
-    background-color: $special-grey;
-  }
+  &--box {
+    &:hover,
+    &:focus {
+      background-color: $special-grey;
+    }
 
-  &:active {
-    color: transparentize($special-dark-grey, 0.3);
+    &:active {
+      color: transparentize($special-dark-grey, 0.3);
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -77,6 +79,10 @@
     background: none;
     background-image: url("../img/icon-plus-mobile.svg");
     cursor: pointer;
+
+    &:hover {
+      background-color: 0;
+    }
 
     @media (min-width: $tablet-width) {
       width: 60px;
