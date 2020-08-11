@@ -39,6 +39,7 @@ const images = () => {
     imagemin.mozjpeg({quality: 90, progressive: true}),
     imagemin.svgo()
   ]))
+  .pipe(gulp.dest("source/img"))
 }
 
 exports.images = images;
