@@ -89,13 +89,6 @@ const html = () => {
   .pipe(htmlmin({ collapseWhitespace: true }))
   .pipe(gulp.dest("build"))
   .pipe(sync.stream());
-  // return gulp.src([
-  //   "source/*.html"
-  // ], {
-  //   base: "source"
-  // })
-  // .pipe(gulp.dest("build"))
-  // .pipe(sync.stream());
 }
 
 exports.html = html;
