@@ -99,7 +99,7 @@ const js = () => {
   return gulp.src("source/js/*.js")
     .pipe(uglify())
     .pipe(gulp.dest("build/js"))
-    .pipe(sync.stream())
+    .pipe(sync.stream());
 }
 
 exports.js = js;
@@ -137,8 +137,8 @@ exports.server = server;
 
 const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
+  gulp.watch("source/js/*.js", gulp.series("js"));
   gulp.watch("source/*.html", gulp.series("html"));
-  gulp.watch("source/*.js", gulp.series("js"));
 }
 
 exports.default = gulp.series(
