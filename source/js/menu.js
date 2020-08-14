@@ -1,8 +1,8 @@
-let menuButton = document.querySelector(".js-button")
-let menu = document.querySelector(".js-menu")
+let menuButton = document.querySelector(".js-button");
+let menu = document.querySelector(".js-menu");
 
 menuButton.classList.remove("main-nav__toggle--no-js");
-menu.classList.remove("main-nav__list--no-js")
+menu.classList.remove("main-nav__list--no-js");
 
 menuButton.addEventListener("click", function(evt) {
   evt.preventDefault();
