@@ -7,6 +7,7 @@ const autoprefixer = require("autoprefixer");
 const sync = require("browser-sync").create();
 const csso = require("gulp-csso");
 const rename = require("gulp-rename");
+const htmlmin = require('gulp-htmlmin');
 const imagemin = require("gulp-imagemin");
 const svgstore = require("gulp-svgstore");
 const webp = require("gulp-webp");
@@ -72,8 +73,7 @@ const copy = () => {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
-    "source/js/**",
-    "source/*.html"
+    "source/js/**"
   ], {
     base: "source"
   })
@@ -85,13 +85,17 @@ exports.copy = copy;
 // HTML
 
 const html = () => {
-  return gulp.src([
-    "source/*.html"
-  ], {
-    base: "source"
-  })
+  return gulp.src('source/*.html')
+  .pipe(htmlmin({ collapseWhitespace: true }))
   .pipe(gulp.dest("build"))
   .pipe(sync.stream());
+  // return gulp.src([
+  //   "source/*.html"
+  // ], {
+  //   base: "source"
+  // })
+  // .pipe(gulp.dest("build"))
+  // .pipe(sync.stream());
 }
 
 exports.html = html;
