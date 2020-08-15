@@ -15,8 +15,7 @@ menuButton.addEventListener("click", function(evt) {
     menu.classList.add("main-nav__list--active");
     menuButton.classList.add("main-nav__toggle--active");
   };
-}
-)
+});
 
 // Map
 
@@ -34,4 +33,15 @@ function initMap() {
     map: map,
     icon: "../img/map-pin.png"
   });
-}
+};
+
+// Slider
+
+let sliderItem = document.querySelectorAll(".slider__item");
+let sliderControl = document.querySelector(".slider__check");
+
+sliderControl.addEventListener("click", function() {
+  let currentItem = document.querySelector(".slider__item--active");
+  sliderItem[0].classList.toggle("slider__item--active");
+  sliderItem[1].classList.toggle("slider__item--active");
+});
