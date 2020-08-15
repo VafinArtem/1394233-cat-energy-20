@@ -9,6 +9,7 @@
     "del": "^5.1.0",
     "gulp": "4.0.*",
     "gulp-csso": "4.0.*",
+    "gulp-htmlmin": "5.0.*",
     "gulp-imagemin": "^7.1.*",
     "gulp-plumber": "1.2.*",
     "gulp-postcss": "8.0.*",
@@ -16,6 +17,7 @@
     "gulp-sass": "4.1.*",
     "gulp-sourcemaps": "2.6.*",
     "gulp-svgstore": "7.0.*",
+    "gulp-uglify-es": "^2.0.0",
     "gulp-webp": "4.0.*",
     "stylelint": "13.6.*",
     "stylelint-config-htmlacademy": "0.1.*"
