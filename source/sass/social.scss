@@ -64,6 +64,8 @@
   }
 
   &--vkontakte {
+    padding-bottom: 1px;
+
     @media (min-width: $tablet-width) {
       .social__img {
         width: 28.89px;
