@@ -42,6 +42,15 @@
   }
 }
 
+.location__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+  }
+}
+
 .location__text {
   margin: 0;
   width: 140px;
