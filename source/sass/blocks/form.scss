@@ -312,6 +312,10 @@
 
   &:hover {
     border: 1px solid $special-grey-mid;
+
+    & + .form__img {
+      fill: inherit;
+    }
   }
 
   &:focus {
@@ -334,11 +338,15 @@
   &--invalid {
     padding-left: 13px;
     border: 2px solid $special-red;
+
+    & + .form__img {
+      fill: $special-red;
+    }
   }
 
   &--contact {
     &:focus {
-      & + svg path {
+      & + .form__img {
         fill: $basic-green;
       }
     }
@@ -347,8 +355,8 @@
       padding-left: 13px;
       border: 2px solid $special-red;
 
-      & + svg path {
-        fill: $basic-green;
+      & + .form__img {
+        fill: $special-red;
       }
     }
   }
