@@ -1,3 +1,27 @@
+// Form
+
+let form = document.querySelector(".form")
+let formButton = form.querySelector(".form__button");
+let formInputs = form.querySelectorAll(".form__input--required");
+
+for (let i = 0; i < formInputs.length; i++) {
+  formInputs[i].addEventListener("input", function(evt) {
+    formInputs[i].classList.remove("form__input--invalid");
+  });
+};
+
+form.addEventListener("submit", function(evt) {
+  for (var i = 0; i < formInputs.length; i++) {
+    if (!formInputs[i].value) {
+      evt.preventDefault();
+      formInputs[i].classList.remove("form__input--invalid");
+      formInputs[i].offsetWidth = formInputs[i].offsetWidth;
+      formInputs[i].classList.add("form__input--invalid");
+    };
+  };
+});
+
+
 // Menu
 
 let menuButton = document.querySelector(".js-button");
@@ -5,7 +29,6 @@ let menu = document.querySelector(".js-menu");
 
 menuButton.classList.remove("main-nav__toggle--no-js");
 menu.classList.remove("main-nav__list--no-js");
-
 menuButton.addEventListener("click", function(evt) {
   evt.preventDefault();
   if (menuButton.classList.contains("main-nav__toggle--active")) {
@@ -39,13 +62,13 @@ function initMap() {
 
 let sliderItems = document.querySelectorAll(".slider__item");
 let sliderControl = document.querySelector(".slider__check");
-let sliderControlRange = document.querySelector(".slider__range")
+let sliderControlRange = document.querySelector(".slider__range");
 
 sliderControl.addEventListener("click", function() {
   for (sliderItem of sliderItems) {
     sliderItem.classList.toggle("slider__item--active");
   };
-})
+});
 
 sliderControlRange.addEventListener("input", function() {
   if (sliderControlRange.value < 50) {
@@ -55,4 +78,4 @@ sliderControlRange.addEventListener("input", function() {
     sliderItems[1].classList.add("slider__item--active");
     sliderItems[0].classList.remove("slider__item--active");
   }
-})
+});

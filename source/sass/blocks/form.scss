@@ -319,16 +319,26 @@
     border: 2px solid $special-dark-grey;
   }
 
-  &:invalid {
+  &:invalid:not(:placeholder-shown) {
     padding-left: 13px;
     border: 2px solid $special-red;
   }
+
+  // &:invalid {
+  //   padding-left: 13px;
+  //   border: 2px solid $special-red;
+  // }
 
   &--comment {
     width: 100%;
     height: 150px;
     margin: 0;
     padding-top: 13px;
+  }
+
+  &--invalid {
+    padding-left: 13px;
+    border: 2px solid $special-red;
   }
 
   &--contact {
@@ -339,6 +349,8 @@
     }
 
     &:invalid {
+      padding-left: 13px;
+      border: 2px solid $special-red;
       & + svg path {
         fill: $basic-green;
       }
