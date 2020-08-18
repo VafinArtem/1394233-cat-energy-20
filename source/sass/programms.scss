@@ -27,6 +27,7 @@
 }
 
 .programms__item {
+  position: relative;
   display: flex;
   justify-content: space-around;
   flex-direction: column;
@@ -55,6 +56,22 @@
     &:first-child {
       margin-bottom: 0;
       margin-right: 80px;
+    }
+  }
+
+  @media (max-width: $mobile-width-only) {
+    &::after {
+      position: absolute;
+      top: 100%;
+      left:50%;
+      content: "";
+      width: 100%;
+      height: 1px;
+      margin-top: -58px;
+      margin-left: -50%;
+      padding: 0 20px;
+      background-color: $special-light-grey;
+      background-clip: content-box;
     }
   }
 }
