@@ -7,7 +7,7 @@
 
   @media (min-width: $desktop-width) {
     padding: 0 40px;
-    padding-top: 84px;
+    padding-top: 81px;
   }
 }
 
@@ -52,6 +52,7 @@
 
   @media (min-width: $desktop-width) {
     flex-grow: 1;
+    min-height: 374px;
 
     &:first-child {
       margin-bottom: 0;
@@ -100,7 +101,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      top: -21px;
+      top: -24px;
       display: block;
       width: 100px;
       height: 100px;
@@ -144,7 +145,7 @@
 
       @media (min-width: $desktop-width) {
         left: 0;
-        top: -27px;
+        top: -30px;
         width: 70px;
         height: 97px;
         margin-left: 15px;
@@ -175,7 +176,7 @@
 
       @media (min-width: $desktop-width) {
         left: 0;
-        top: -1px;
+        top: -4px;
         width: 134px;
         height: 56px;
         margin-left: -19px;

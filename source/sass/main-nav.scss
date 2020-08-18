@@ -129,6 +129,7 @@
           background-color: $basic-black;
 
           @media (min-width: $desktop-width) {
+            margin-top: 5px;
             background-color: $basic-white;
           }
         }
