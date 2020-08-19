@@ -70,13 +70,14 @@
   }
 
   @media (min-width: $tablet-width) {
-    min-width: 440px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    min-width: 440px;
   }
 
   @media (min-width: $desktop-width) {
-    min-width: 478px;
+    width: 478px;
   }
 }
 
@@ -92,12 +93,18 @@
     border-top: 1px solid $special-lightest-grey;
 
     @media (min-width: $tablet-width) {
+      height: auto;
       border: 0;
     }
   }
 
   @media (min-width: $tablet-width) {
+    min-height: 67px;
     border: 0;
+
+    &:not(:last-child) {
+      padding-right: 5px;
+    }
   }
 }
 
