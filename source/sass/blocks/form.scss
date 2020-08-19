@@ -116,6 +116,7 @@
   }
 
   &--comment {
+    padding: 0 20px;
     margin-bottom: 26px;
   }
 
@@ -323,7 +324,7 @@
     border: 2px solid $special-dark-grey;
   }
 
-  &:invalid {
+  &:invalid:not(:placeholder-shown) {
     padding-left: 13px;
     border: 2px solid $special-red;
   }
