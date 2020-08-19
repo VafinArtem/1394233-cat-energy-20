@@ -179,6 +179,22 @@
     &:not(:last-child) {
       margin-bottom: 14px;
     }
+
+    @media (min-width: $tablet-width) {
+      & > .form__input--invalid {
+        padding-left: 19px;
+        border: 2px solid $special-red;
+
+        &:hover {
+          padding-left: 20px;
+        }
+
+        &:focus {
+          padding-left: 19px;
+          border: 2px solid $special-dark-grey;
+        }
+      }
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -304,7 +320,7 @@
     border: 2px solid $special-dark-grey;
   }
 
-  &:invalid:not(:placeholder-shown) {
+  &:invalid {
     padding-left: 13px;
     border: 2px solid $special-red;
   }
@@ -319,6 +335,16 @@
   &--invalid {
     padding-left: 13px;
     border: 2px solid $special-red;
+
+    &:hover {
+      padding-left: 14px;
+      border: 1px solid $special-grey-mid;
+    }
+
+    &:focus {
+      padding-left: 13px;
+      border: 2px solid $special-dark-grey;
+    }
 
     & + .form__img {
       fill: $special-red;
@@ -349,6 +375,10 @@
 
     &--contact {
       padding-left: 20px;
+
+      &:hover {
+        padding-left: 20px;
+      }
 
       &:focus {
         padding-left: 19px;
