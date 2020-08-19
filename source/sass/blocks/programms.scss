@@ -53,9 +53,9 @@
   @media (min-width: $desktop-width) {
     flex-grow: 1;
     min-height: 374px;
+    margin-bottom: 29px;
 
     &:first-child {
-      margin-bottom: 0;
       margin-right: 80px;
     }
   }
