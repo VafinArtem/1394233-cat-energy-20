@@ -323,7 +323,7 @@
     border: 2px solid $special-dark-grey;
   }
 
-  &:invalid:not(:placeholder-shown) {
+  &:invalid {
     padding-left: 13px;
     border: 2px solid $special-red;
   }

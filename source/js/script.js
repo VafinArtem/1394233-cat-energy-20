@@ -38,8 +38,14 @@ function initMap() {
 
 if(window.location.toString().indexOf("form.html")>0) {
   let form = document.querySelector(".form")
-  let formButton = form.querySelector(".form__button");
   let formInputs = form.querySelectorAll(".form__input--required");
+
+
+  for (let formInput of formInputs) {
+    if (formInput.hasAttribute("required")) {
+      formInput.removeAttribute("required");
+    }
+  }
 
   for (let i = 0; i < formInputs.length; i++) {
     formInputs[i].addEventListener("input", function(evt) {
