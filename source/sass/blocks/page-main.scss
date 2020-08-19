@@ -4,6 +4,10 @@
     margin-top: 22px;
   }
 
+  &--form {
+    overflow: hidden;
+  }
+
   @media (min-width: $tablet-width) {
     margin-top: -4px;
   }
