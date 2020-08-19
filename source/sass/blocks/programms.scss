@@ -23,6 +23,7 @@
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 }
 
@@ -52,11 +53,17 @@
 
   @media (min-width: $desktop-width) {
     flex-grow: 1;
+    width: 570px;
     min-height: 374px;
     margin-bottom: 29px;
+    padding-right: 23px;
 
-    &:first-child {
+    &:nth-child(odd) {
       margin-right: 80px;
+    }
+
+    &:last-child {
+      margin-right: 0;
     }
   }
 
@@ -221,7 +228,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 467px;
+    width: 100%;
     margin-bottom: 27px;
 
     br {
