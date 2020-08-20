@@ -83,7 +83,6 @@ if(window.location.toString().indexOf("form.html")>0) {
 
 // Slider
 
-if(window.location.toString().indexOf("index.html")>0) {
   let sliderItems = document.querySelectorAll(".slider__item");
   let sliderControl = document.querySelector(".slider__check");
   let sliderControlRange = document.querySelector(".slider__range");
@@ -103,4 +102,3 @@ if(window.location.toString().indexOf("index.html")>0) {
       sliderItems[0].classList.remove("slider__item--active");
     }
   });
-};

@@ -34,8 +34,8 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 324px 324px;
-    grid-template-rows: 227px 227px;
+    grid-template-columns: min-content min-content;
+    grid-template-rows: min-content;
     column-gap: 60px;
     row-gap: 90px;
     margin-top: 72px;
@@ -60,8 +60,8 @@
     flex-direction: column;
     justify-content: start;
     align-items: stretch;
+    min-width: 324px;
     min-height: 227px;
-    min-width: 245px;
     margin-bottom: 0;
 
     &::after {
@@ -75,6 +75,10 @@
       font-size: 280px;
       color: $basic-grey;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 245px;
   }
 }
 
