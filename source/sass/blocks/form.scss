@@ -42,7 +42,11 @@
     margin-bottom: 0;
 
     &--contact {
-      justify-content: flex-start;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: min-content;
+      column-gap: 80px;
+      row-gap: 20px;
       width: 100%;
     }
 
@@ -238,12 +242,10 @@
     }
 
     &--contact {
-      min-width: 570px;
       padding: 0;
 
       &:not(:last-child) {
         margin-bottom: 0;
-        margin-right: 80px;
       }
     }
   }
