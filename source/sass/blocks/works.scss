@@ -42,8 +42,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 245px 245px 245px 245px;
-    grid-template-rows: 227px;
+    grid-template-columns: min-content min-content min-content min-content;
+    grid-template-rows: min-content;
     gap: 80px;
   }
 }
@@ -60,6 +60,8 @@
     flex-direction: column;
     justify-content: start;
     align-items: stretch;
+    min-height: 227px;
+    min-width: 245px;
     margin-bottom: 0;
 
     &::after {
