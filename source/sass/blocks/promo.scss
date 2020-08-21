@@ -18,9 +18,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    justify-content: start;
-    flex-wrap: wrap;
-    height: 550px;
+    display: grid;
+    grid-template-columns: 570px 570px;
+    grid-template-rows: min-content min-content min-content;
+    min-height: 550px;
   }
 }
 
@@ -60,6 +61,7 @@
     margin-bottom: 1px;
 
     &--btn {
+      grid-column: 1/2;
       margin: 0;
     }
   }
@@ -120,9 +122,11 @@
   }
 
   @media (min-width: $desktop-width) {
+    grid-column: 2/3;
+    grid-row: 1/-1;
     top: -30px;
-    left: -176px;
-    flex-grow: 1;
+    left: -202px;
+    bottom: 100%;
   }
 }
 
