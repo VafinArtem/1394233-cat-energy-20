@@ -67,18 +67,6 @@
   margin-bottom: 23px;
   border: none;
 
-  &::before {
-    position: absolute;
-    content: "";
-    top: 16px;
-    left: 50%;
-    width: 200%;
-    height: 2px;
-    background-color: $basic-green;
-    transform: translateX(-50%);
-    z-index: -1;
-  }
-
   &--about {
     &::before {
       display: none;
@@ -422,6 +410,19 @@
   font-size: 24px;
   line-height: 26px;
   background-color: $basic-white;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 16px;
+    left: 50%;
+    width: 2000%;
+    height: 2px;
+    background-color: $basic-green;
+    transform: translateX(-50%);
+    z-index: -1;
+  }
+
 
   &--comment {
     padding: 0 20px;

@@ -96,6 +96,80 @@
   transform: translateX(37px);
 }
 
+.slider__range::-moz-range-track {
+  &::before,
+    &::after {
+      position: absolute;
+      top: -10px;
+      padding-bottom: 4px;
+      font-family: "Oswald", "Arial", sans-serif;
+      font-size: 20px;
+      text-transform: uppercase;
+      border-bottom: dotted 1px $special-grey-mid-dark;
+    }
+
+    &::before {
+      right: 100%;
+      content: "было";
+      margin-right: 24px;
+    }
+
+    &::after {
+      left: 100%;
+      content: "стало";
+      margin-left: 21px;
+    }
+}
+
+.slider__range::-moz-range-track {
+  appearance: none;
+  position: relative;
+  width: 428px;
+  height: 6px;
+  margin: 0 22px;
+  background-color: $special-grey-mid-light;
+  border-radius: 6px;
+  outline: none;
+
+  &::before,
+  &::after {
+    position: absolute;
+    top: -10px;
+    padding-bottom: 4px;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    border-bottom: dotted 1px $special-grey-mid-dark;
+  }
+
+  &::before {
+    right: 100%;
+    content: "было";
+    margin-right: 24px;
+  }
+
+  &::after {
+    left: 100%;
+    content: "стало";
+    margin-left: 21px;
+  }
+
+  &:hover,
+  &:focus {
+    &::after,
+    &::before {
+      border-bottom: solid 1px $special-grey-mid-dark;
+    }
+  }
+
+  &:active {
+    &::after,
+    &::before {
+      border-bottom: none;
+    }
+  }
+}
+
 .slider__range {
   appearance: none;
   position: relative;
@@ -145,6 +219,28 @@
   }
 
   &::-webkit-slider-thumb {
+    appearance: none;
+    position: relative;
+    width: 34px;
+    height: 34px;
+    background-color: $basic-green;
+    border: 1px solid $special-grey-mid;
+    border-radius: 50%;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16), inset 0 0 0 12px $basic-white;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.19), inset 0 0 0 12px $basic-white;
+    }
+
+    &:active {
+      border: 1px solid $basic-green;
+      box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2), inset 0 0 0 12px $basic-white;
+    }
+  }
+
+  &::-moz-range-thumb {
     appearance: none;
     position: relative;
     width: 34px;
