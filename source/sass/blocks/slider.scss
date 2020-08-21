@@ -32,6 +32,7 @@
   }
 
   &--range {
+    display: flex;
     padding-top: 10px;
 
     @media (max-width: $mobile-width-only) {
@@ -96,79 +97,79 @@
   transform: translateX(37px);
 }
 
-.slider__range::-moz-range-track {
-  &::before,
-    &::after {
-      position: absolute;
-      top: -10px;
-      padding-bottom: 4px;
-      font-family: "Oswald", "Arial", sans-serif;
-      font-size: 20px;
-      text-transform: uppercase;
-      border-bottom: dotted 1px $special-grey-mid-dark;
-    }
+// .slider__range::-moz-range-track {
+//   &::before,
+//     &::after {
+//       position: absolute;
+//       top: -10px;
+//       padding-bottom: 4px;
+//       font-family: "Oswald", "Arial", sans-serif;
+//       font-size: 20px;
+//       text-transform: uppercase;
+//       border-bottom: dotted 1px $special-grey-mid-dark;
+//     }
 
-    &::before {
-      right: 100%;
-      content: "было";
-      margin-right: 24px;
-    }
+//     &::before {
+//       right: 100%;
+//       content: "было";
+//       margin-right: 24px;
+//     }
 
-    &::after {
-      left: 100%;
-      content: "стало";
-      margin-left: 21px;
-    }
-}
+//     &::after {
+//       left: 100%;
+//       content: "стало";
+//       margin-left: 21px;
+//     }
+// }
 
-.slider__range::-moz-range-track {
-  appearance: none;
-  position: relative;
-  width: 428px;
-  height: 6px;
-  margin: 0 22px;
-  background-color: $special-grey-mid-light;
-  border-radius: 6px;
-  outline: none;
+// .slider__range::-moz-range-track {
+//   appearance: none;
+//   position: relative;
+//   width: 428px;
+//   height: 6px;
+//   margin: 0 22px;
+//   background-color: $special-grey-mid-light;
+//   border-radius: 6px;
+//   outline: none;
 
-  &::before,
-  &::after {
-    position: absolute;
-    top: -10px;
-    padding-bottom: 4px;
-    font-family: "Oswald", "Arial", sans-serif;
-    font-size: 20px;
-    text-transform: uppercase;
-    border-bottom: dotted 1px $special-grey-mid-dark;
-  }
+  // &::before,
+  // &::after {
+  //   position: absolute;
+  //   top: -10px;
+  //   padding-bottom: 4px;
+  //   font-family: "Oswald", "Arial", sans-serif;
+  //   font-size: 20px;
+  //   text-transform: uppercase;
+  //   border-bottom: dotted 1px $special-grey-mid-dark;
+  // }
 
-  &::before {
-    right: 100%;
-    content: "было";
-    margin-right: 24px;
-  }
+  // &::before {
+  //   right: 100%;
+  //   content: "было";
+  //   margin-right: 24px;
+  // }
 
-  &::after {
-    left: 100%;
-    content: "стало";
-    margin-left: 21px;
-  }
+  // &::after {
+  //   left: 100%;
+  //   content: "стало";
+  //   margin-left: 21px;
+  // }
 
-  &:hover,
-  &:focus {
-    &::after,
-    &::before {
-      border-bottom: solid 1px $special-grey-mid-dark;
-    }
-  }
+  // &:hover,
+  // &:focus {
+  //   &::after,
+  //   &::before {
+  //     border-bottom: solid 1px $special-grey-mid-dark;
+  //   }
+  // }
 
-  &:active {
-    &::after,
-    &::before {
-      border-bottom: none;
-    }
-  }
-}
+  // &:active {
+  //   &::after,
+  //   &::before {
+  //     border-bottom: none;
+  //   }
+  // }
+// }
 
 .slider__range {
   appearance: none;
@@ -180,40 +181,30 @@
   border-radius: 6px;
   outline: none;
 
-  &::before,
-  &::after {
-    position: absolute;
-    top: -10px;
-    padding-bottom: 4px;
-    font-family: "Oswald", "Arial", sans-serif;
-    font-size: 20px;
-    text-transform: uppercase;
-    border-bottom: dotted 1px $special-grey-mid-dark;
-  }
-
-  &::before {
-    right: 100%;
-    content: "было";
-    margin-right: 24px;
-  }
-
-  &::after {
-    left: 100%;
-    content: "стало";
-    margin-left: 21px;
+  &::-moz-range-track {
+    appearance: none;
+    position: relative;
+    width: 428px;
+    height: 6px;
+    margin: 0 22px;
+    background-color: $special-grey-mid-light;
+    border-radius: 6px;
+    outline: none;
   }
 
   &:hover,
   &:focus {
-    &::after,
-    &::before {
+    &~ .slider__text--after,
+    &~ .slider__text--before {
+      padding-bottom: 4px;
       border-bottom: solid 1px $special-grey-mid-dark;
     }
   }
 
   &:active {
-    &::after,
-    &::before {
+    &~ .slider__text--after,
+    &~ .slider__text--before {
+      padding-bottom: 5px;
       border-bottom: none;
     }
   }
@@ -264,14 +255,24 @@
 }
 
 .slider__text {
+  display: block;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    margin-top: -6px;
-    padding-bottom: 5px;
+    position: relative;
+    top: -6px;
+    padding-bottom: 4px;
     font-size: 20px;
     border-bottom: dotted 1px $special-grey-mid-dark;
+
+    &--before {
+      order: -1;
+    }
+
+    &--after {
+      order: 1;
+    }
   }
 }

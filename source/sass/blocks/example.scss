@@ -217,7 +217,7 @@
 
   @media (min-width: $tablet-width) {
     margin-top: 36px;
-    padding-bottom: 81px;
+    padding-bottom: 62px;
   }
 
   @media (min-width: $desktop-width) {
@@ -226,7 +226,7 @@
     position: relative;
     left: 40px;
     top: $slider-shift;
-    margin-bottom: $slider-shift;
+    margin-bottom: $slider-shift - 18px;
     margin-top: 31px;
   }
 }
