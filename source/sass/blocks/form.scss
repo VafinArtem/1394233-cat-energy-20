@@ -101,10 +101,6 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 70px;
 
-    &::before {
-      top: 24px;
-    }
-
     &--programm {
       padding-left: 28px;
       padding-top: 29px;
@@ -128,10 +124,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    &::before {
-      top: 21px;
-    }
-
     &--about {
       width: 569px;
     }
@@ -453,10 +445,18 @@
     &--contact {
       width: auto;
     }
+
+    &::before {
+      top: 24px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     left: -40px;
+
+    &::before {
+      top: 21px;
+    }
   }
 }
 
