@@ -10,6 +10,6 @@ function initMap() {
   let marker = new google.maps.Marker({
     position: academy,
     map: map,
-    icon: "../img/map-pin.png"
+    icon: "/img/map-pin.png"
   });
 }
