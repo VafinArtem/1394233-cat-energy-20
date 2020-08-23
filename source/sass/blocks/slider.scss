@@ -120,16 +120,16 @@
 
   &:hover,
   &:focus {
-    &~ .slider__text--after,
-    &~ .slider__text--before {
+    & ~ .slider__text--after,
+    & ~ .slider__text--before {
       padding-bottom: 4px;
       border-bottom: solid 1px $special-grey-mid-dark;
     }
   }
 
   &:active {
-    &~ .slider__text--after,
-    &~ .slider__text--before {
+    & ~ .slider__text--after,
+    & ~ .slider__text--before {
       padding-bottom: 5px;
       border-bottom: none;
     }
