@@ -51,6 +51,8 @@
 }
 
 .social__link {
+  outline: none;
+
   &:hover,
   &:focus {
     .social__img {
