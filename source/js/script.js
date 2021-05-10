@@ -53,7 +53,7 @@ menuButton.addEventListener("click", function(evt) {
 // Form
 
 if(window.location.toString().indexOf("form.html")>0) {
-  let form = document.querySelector(".form")
+  let form = document.querySelector(".form");
   let formInputs = form.querySelectorAll(".form__input--required");
 
 
@@ -64,10 +64,10 @@ if(window.location.toString().indexOf("form.html")>0) {
   }
 
   for (let i = 0; i < formInputs.length; i++) {
-    formInputs[i].addEventListener("input", function(evt) {
+    formInputs[i].addEventListener("input", function() {
       formInputs[i].classList.remove("form__input--invalid");
     });
-  };
+  }
 
   form.addEventListener("submit", function(evt) {
     for (var i = 0; i < formInputs.length; i++) {
@@ -76,29 +76,25 @@ if(window.location.toString().indexOf("form.html")>0) {
         formInputs[i].classList.remove("form__input--invalid");
         formInputs[i].offsetWidth = formInputs[i].offsetWidth;
         formInputs[i].classList.add("form__input--invalid");
-      };
-    };
+      }
+    }
   });
-};
+}
 
 // Slider
 
-  let sliderItems = document.querySelectorAll(".slider__item");
-  let sliderControl = document.querySelector(".slider__check");
-  let sliderControlRange = document.querySelector(".slider__range");
+  const sliderItems = document.querySelectorAll(".slider__item");
+  const sliderControl = document.querySelector(".slider__check");
+  const sliderControlRange = document.querySelector(".slider__range");
+  const beforeElement = document.querySelector(`.js-slider-after`);
 
   sliderControl.addEventListener("click", function() {
-    for (sliderItem of sliderItems) {
+    for (const sliderItem of sliderItems) {
       sliderItem.classList.toggle("slider__item--active");
-    };
+    }
   });
 
-  sliderControlRange.addEventListener("input", function() {
-    if (sliderControlRange.value < 50) {
-      sliderItems[0].classList.add("slider__item--active");
-      sliderItems[1].classList.remove("slider__item--active");
-    } else if (sliderControlRange.value > 50) {
-      sliderItems[1].classList.add("slider__item--active");
-      sliderItems[0].classList.remove("slider__item--active");
-    }
+  sliderControlRange.addEventListener(`input`, () => {
+    console.log(sliderControlRange.value);
+    beforeElement.style.maxWidth = `${Math.abs(sliderControlRange.value)}%`;
   });
