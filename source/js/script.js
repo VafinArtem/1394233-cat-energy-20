@@ -13,42 +13,42 @@ menuButton.addEventListener("click", function(evt) {
   } else {
     menu.classList.add("main-nav__list--active");
     menuButton.classList.add("main-nav__toggle--active");
-  };
+  }
 });
 
 // Map
 
-  function initMap() {
-    let centerPoint = {lat: 59.938765, lng: 30.320583};
-    let academy = {lat: 59.938635, lng: 30.323118};
-    if (window.matchMedia("(min-width: 1440px)").matches) {
-      let map = new google.maps.Map(
-        document.getElementById('map'), {
-          zoom: 17,
-          center: centerPoint,
-          disableDefaultUI: true
-        }
-      );
-      let marker = new google.maps.Marker({
-        position: academy,
-        map: map,
-        icon: "../img/map-pin.png"
-      });
-    } else {
-      let map = new google.maps.Map(
-        document.getElementById('map'), {
-          zoom: 17,
-          center: academy,
-          disableDefaultUI: true
-        }
-      );
-      let marker = new google.maps.Marker({
-        position: academy,
-        map: map,
-        icon: "/img/map-pin.png"
-      });
-    }
-  };
+function initMap() {
+  let centerPoint = {lat: 59.938765, lng: 30.320583};
+  let academy = {lat: 59.938635, lng: 30.323118};
+  if (window.matchMedia("(min-width: 1440px)").matches) {
+    let map = new google.maps.Map(
+      document.getElementById('map'), {
+        zoom: 17,
+        center: centerPoint,
+        disableDefaultUI: true
+      }
+    );
+    let marker = new google.maps.Marker({
+      position: academy,
+      map: map,
+      icon: "./img/map-pin.png"
+    });
+  } else {
+    let map = new google.maps.Map(
+      document.getElementById('map'), {
+        zoom: 17,
+        center: academy,
+        disableDefaultUI: true
+      }
+    );
+    let marker = new google.maps.Marker({
+      position: academy,
+      map: map,
+      icon: "./img/map-pin.png"
+    });
+  }
+}
 
 // Form
 
@@ -63,38 +63,39 @@ if(window.location.toString().indexOf("form.html")>0) {
     }
   }
 
-  for (let i = 0; i < formInputs.length; i++) {
-    formInputs[i].addEventListener("input", function() {
-      formInputs[i].classList.remove("form__input--invalid");
+  formInputs.forEach((element) => {
+    element.addEventListener("input", () => {
+      element.classList.remove("form__input--invalid");
     });
-  }
+  });
 
   form.addEventListener("submit", function(evt) {
-    for (var i = 0; i < formInputs.length; i++) {
-      if (!formInputs[i].value) {
-        evt.preventDefault();
-        formInputs[i].classList.remove("form__input--invalid");
-        formInputs[i].offsetWidth = formInputs[i].offsetWidth;
-        formInputs[i].classList.add("form__input--invalid");
-      }
-    }
+    formInputs.forEach((element) => {
+      element.addEventListener("input", (evt) => {
+        if (!element.value) {
+          evt.preventDefault();
+          element.classList.remove("form__input--invalid");
+          element.offsetWidth = element.offsetWidth;
+          element.classList.add("form__input--invalid");
+        }
+      });
+    });
   });
 }
 
 // Slider
 
-  const sliderItems = document.querySelectorAll(".slider__item");
-  const sliderControl = document.querySelector(".slider__check");
-  const sliderControlRange = document.querySelector(".slider__range");
-  const beforeElement = document.querySelector(`.js-slider-after`);
+const sliderItems = document.querySelectorAll(".slider__item");
+const sliderControl = document.querySelector(".slider__check");
+const sliderControlRange = document.querySelector(".slider__range");
+const beforeElement = document.querySelector(`.js-slider-after`);
 
-  sliderControl.addEventListener("click", function() {
-    for (const sliderItem of sliderItems) {
-      sliderItem.classList.toggle("slider__item--active");
-    }
-  });
+sliderControl.addEventListener("click", function() {
+  for (const sliderItem of sliderItems) {
+    sliderItem.classList.toggle("slider__item--active");
+  }
+});
 
-  sliderControlRange.addEventListener(`input`, () => {
-    console.log(sliderControlRange.value);
-    beforeElement.style.maxWidth = `${Math.abs(sliderControlRange.value)}%`;
-  });
+sliderControlRange.addEventListener(`input`, () => {
+  beforeElement.style.maxWidth = `${Math.abs(sliderControlRange.value)}%`;
+});
